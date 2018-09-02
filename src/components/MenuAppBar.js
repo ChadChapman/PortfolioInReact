@@ -12,6 +12,10 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import WorkIcon from '@material-ui/icons/WorkRounded'
+import CodeIcon from '@material-ui/icons/CodeRounded'
+import CreateIcon from '@material-ui/icons/CreateRounded'
+import GroupIcon from '@material-ui/icons/GroupRounded'
 
 const styles = {
     root: {
@@ -75,7 +79,31 @@ class MenuAppBar extends React.Component {
                                     onClick={this.handleMenu}
                                     color="inherit"
                                 >
-                                    <AccountCircle />
+                                    <CreateIcon />
+                                </IconButton>
+                                <IconButton
+                                    aria-owns={open ? 'menu-appbar' : null}
+                                    aria-haspopup="true"
+                                    onClick={this.handleMenu}
+                                    color="inherit"
+                                >
+                                    <WorkIcon />
+                                </IconButton>
+                                <IconButton
+                                    aria-owns={open ? 'menu-appbar' : null}
+                                    aria-haspopup="true"
+                                    onClick={this.handleMenu}
+                                    color="inherit"
+                                >
+                                    <CodeIcon />
+                                </IconButton>
+                                <IconButton
+                                    aria-owns={open ? 'menu-appbar' : null}
+                                    aria-haspopup="true"
+                                    onClick={this.handleMenu}
+                                    color="inherit"
+                                >
+                                    <GroupIcon />
                                 </IconButton>
                                 <Menu
                                     id="menu-appbar"
