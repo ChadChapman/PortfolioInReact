@@ -25,7 +25,8 @@ function AutoGrid(props) {
                     <Paper className={classes.paper}>xs</Paper>
                 </Grid>
                 <Grid item xs>
-                    <Paper className={classes.paper}>xs</Paper>
+                    <Paper className={classes.paper}>xsmlmlmlmlmlmlmlml
+                        mlmlmlmlmlmlmlmlmlmmllmmlmlmlmlmlmlmlmlmlmm</Paper>
                 </Grid>
                 <Grid item xs>
                     <Paper className={classes.paper}>xs</Paper>
@@ -39,6 +40,9 @@ function AutoGrid(props) {
                     <Paper className={classes.paper}>xs=6</Paper>
                 </Grid>
                 <Grid item xs>
+                    <Paper className={classes.paper}>xsxsxsxsxsxsxsxsxsxsxsxxs</Paper>
+                    <Paper className={classes.paper}>xs</Paper>
+                    <Paper className={classes.paper}>xs</Paper>
                     <Paper className={classes.paper}>xs</Paper>
                 </Grid>
             </Grid>
