@@ -16,6 +16,8 @@ import WorkIcon from '@material-ui/icons/WorkRounded'
 import CodeIcon from '@material-ui/icons/CodeRounded'
 import CreateIcon from '@material-ui/icons/CreateRounded'
 import GroupIcon from '@material-ui/icons/GroupRounded'
+import Tooltip from '@material-ui/core/Tooltip'
+import HomeIcon from '@material-ui/icons/HomeRounded'
 
 const styles = {
     root: {
@@ -65,14 +67,31 @@ class MenuAppBar extends React.Component {
                 {/*</FormGroup>*/}
                 <AppBar position="static">
                     <Toolbar>
+                        <Tooltip title="list of all sections">
                         <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                             <MenuIcon />
                         </IconButton>
+                        </Tooltip>
+                        <Tooltip title="back to home">
+                            <IconButton
+                                aria-owns={open ? 'menu-appbar' : null}
+                                aria-haspopup="true"
+                                // onClick={this.handleMenu}
+                                color="inherit"
+                            >
+                                <HomeIcon />
+                            </IconButton>
+                        </Tooltip>
+                        {/*<Tooltip title="back to home page">*/}
+                        {/*<IconButton className={classes.flex} color="inherit" aria-label="Back to Home">*/}
                         <Typography variant="title" color="inherit" className={classes.flex}>
                             Chad T. Chapman's Personal Page
                         </Typography>
+                        {/*</IconButton>*/}
+                        {/*</Tooltip>*/}
                         {auth && (
                             <div>
+                                <Tooltip title="blog">
                                 <IconButton
                                     aria-owns={open ? 'menu-appbar' : null}
                                     aria-haspopup="true"
@@ -81,6 +100,8 @@ class MenuAppBar extends React.Component {
                                 >
                                     <CreateIcon />
                                 </IconButton>
+                                </Tooltip>
+                                <Tooltip title="work history">
                                 <IconButton
                                     aria-owns={open ? 'menu-appbar' : null}
                                     aria-haspopup="true"
@@ -89,6 +110,8 @@ class MenuAppBar extends React.Component {
                                 >
                                     <WorkIcon />
                                 </IconButton>
+                                </Tooltip>
+                                <Tooltip title="code samples">
                                 <IconButton
                                     aria-owns={open ? 'menu-appbar' : null}
                                     aria-haspopup="true"
@@ -97,14 +120,17 @@ class MenuAppBar extends React.Component {
                                 >
                                     <CodeIcon />
                                 </IconButton>
-                                <IconButton
-                                    aria-owns={open ? 'menu-appbar' : null}
-                                    aria-haspopup="true"
-                                    onClick={this.handleMenu}
-                                    color="inherit"
-                                >
-                                    <GroupIcon />
-                                </IconButton>
+                                </Tooltip>
+                                {/*<Tooltip title="collaborations">*/}
+                                {/*<IconButton*/}
+                                    {/*aria-owns={open ? 'menu-appbar' : null}*/}
+                                    {/*aria-haspopup="true"*/}
+                                    {/*onClick={this.handleMenu}*/}
+                                    {/*color="inherit"*/}
+                                {/*>*/}
+                                    {/*<GroupIcon />*/}
+                                {/*</IconButton>*/}
+                                {/*</Tooltip>*/}
                                 <Menu
                                     id="menu-appbar"
                                     anchorEl={anchorEl}
