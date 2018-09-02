@@ -22,28 +22,29 @@ function AutoGrid(props) {
         <div className={classes.root}>
             <Grid container spacing={24}>
                 <Grid item xs>
-                    <Paper className={classes.paper}>xs</Paper>
+                    <Paper className={classes.paper}>Technologies</Paper>
                 </Grid>
                 <Grid item xs>
                     <Paper className={classes.paper}>xsmlmlmlmlmlmlmlml
                         mlmlmlmlmlmlmlmlmlmmllmmlmlmlmlmlmlmlmlmlmm</Paper>
                 </Grid>
                 <Grid item xs>
-                    <Paper className={classes.paper}>xs</Paper>
+                    <Paper className={classes.paper}>Projects</Paper>
                 </Grid>
             </Grid>
             <Grid container spacing={24}>
                 <Grid item xs>
-                    <Paper className={classes.paper}>xs</Paper>
+                    <Paper className={classes.paper}>Background</Paper>
+                    <Paper className={classes.paper}>Professional History</Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>xs=6</Paper>
                 </Grid>
                 <Grid item xs>
                     <Paper className={classes.paper}>xsxsxsxsxsxsxsxsxsxsxsxxs</Paper>
-                    <Paper className={classes.paper}>xs</Paper>
-                    <Paper className={classes.paper}>xs</Paper>
-                    <Paper className={classes.paper}>xs</Paper>
+                    <Paper className={classes.paper}>Volunteering</Paper>
+                    <Paper className={classes.paper}>Code Tacoma</Paper>
+                    <Paper className={classes.paper}>Mentoring</Paper>
                 </Grid>
             </Grid>
         </div>
