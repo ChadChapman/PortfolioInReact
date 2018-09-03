@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import MenuAppBar from './MenuAppBar'
-import LabelBottomNavigation from './LabelBottomNavigation'
 import FooterBar from './FooterBar'
 import TechnologyExpansionPanel from './TechnologyExpansionPanel'
 
