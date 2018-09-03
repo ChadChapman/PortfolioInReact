@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import MenuAppBar from './MenuAppBar'
 import LabelBottomNavigation from './LabelBottomNavigation'
 import FooterBar from './FooterBar'
+import TechnologyExpansionPanel from './TechnologyExpansionPanel'
 
 const styles = theme => ({
     root: {
@@ -31,7 +32,8 @@ function AutoGrid(props) {
             </Grid>
             <Grid container spacing={24}>
                 <Grid item xs={12} sm={4}>
-                    <Paper className={classes.paper}>Technologies</Paper>
+                    {/*<Paper className={classes.paper}>Technologies</Paper>*/}
+                    <TechnologyExpansionPanel />
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Paper className={classes.paper}>Current Projects</Paper>
@@ -78,6 +80,7 @@ function AutoGrid(props) {
             {/*</Grid>*/}
             <FooterBar />
         </div>
+
     );
 }
 
