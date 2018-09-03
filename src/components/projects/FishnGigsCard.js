@@ -46,7 +46,7 @@ const styles = theme => ({
     },
 });
 
-class RecipeReviewCard extends React.Component {
+class FishnGigsCard extends React.Component {
     state = { expanded: false };
 
     handleExpandClick = () => {
@@ -60,8 +60,8 @@ class RecipeReviewCard extends React.Component {
             <Card className={classes.card}>
                 <CardHeader
                     avatar={
-                        <Avatar aria-label="Recipe" className={classes.avatar}>
-                            R
+                        <Avatar aria-label="Fishin' gigs" className={classes.avatar}>
+                            F
                         </Avatar>
                     }
                     action={
@@ -69,27 +69,28 @@ class RecipeReviewCard extends React.Component {
                             <MoreVertIcon />
                         </IconButton>
                     }
-                    title="Shrimp and Chorizo Paella"
-                    subheader="September 14, 2016"
+                    title="FishnGigs"
+                    subheader="a jobs & information board for the commercial fishing industry"
                 />
                 <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/paella.jpg"
-                    title="Contemplative Reptile"
+                    image="/static/images/crustys.jpg"
+                    title="mmmmmmmmmm"
                 />
                 <CardContent>
                     <Typography component="p">
-                        This impressive paella is a perfect party dish and a fun meal to cook together with your
-                        guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                        Originally a monolith in Flask then later Django, FishnGigs is now a REST API
+                        with a React front-end.  It lives in a private repo but I am happy to share the
+                        code with potential employers.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
-                    <IconButton aria-label="Add to favorites">
-                        <FavoriteIcon />
-                    </IconButton>
-                    <IconButton aria-label="Share">
-                        <ShareIcon />
-                    </IconButton>
+                    {/*<IconButton aria-label="Add to favorites">*/}
+                        {/*<FavoriteIcon />*/}
+                    {/*</IconButton>*/}
+                    {/*<IconButton aria-label="Share">*/}
+                        {/*<ShareIcon />*/}
+                    {/*</IconButton>*/}
                     <IconButton
                         className={classnames(classes.expand, {
                             [classes.expandOpen]: this.state.expanded,
@@ -104,26 +105,26 @@ class RecipeReviewCard extends React.Component {
                 <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
                     <CardContent>
                         <Typography paragraph variant="body2">
-                            Method:
+                            Background:
                         </Typography>
                         <Typography paragraph>
-                            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-                            minutes.
+                            Niche industries like commercial fishing don't have
+                            much in the way of online platforms, this project aims to
+                            to help change that.
                         </Typography>
                         <Typography paragraph>
-                            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-                            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-                            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving
-                            chicken and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion,
-                            salt and pepper, and cook, stirring often until thickened and fragrant, about 10
-                            minutes. Add saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+                            Here's a full list of all the technologies used so far:
+                            Django Rest Framework (making Django, SQLite3 and Python rather implicit)
+                            PostgreSQL, git, Linux, Digital Ocean and now Heroku as a platform.
+                            A Material Design aesthetic with the material-ui module frames the UI.
                         </Typography>
                         <Typography paragraph>
-                            Add rice and stir very gently to distribute. Top with artichokes and peppers, and cook
-                            without stirring, until most of the liquid is absorbed, 15 to 18 minutes. Reduce heat
-                            to medium-low, add reserved shrimp and mussels, tucking them down into the rice, and
-                            cook again without stirring, until mussels have opened and rice is just tender, 5 to 7
-                            minutes more. (Discard any mussels that don’t open.)
+                            Future technologies getting integrated to this project:
+                            Redux (I've found it really insightful to start with using vanilla React
+                            for a project then add Redux), react-router, Travis & Jenkins (I'm getting
+                            better at this CI/CD thing), a back-end caching library (have not decided
+                            on one quite yet) and Redis.
+                            The long-term plan for this project includes  
                         </Typography>
                         <Typography>
                             Set aside off of the heat to let rest for 10 minutes, and then serve.
@@ -135,8 +136,8 @@ class RecipeReviewCard extends React.Component {
     }
 }
 
-RecipeReviewCard.propTypes = {
+FishnGigsCardCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(RecipeReviewCard);
+export default withStyles(styles)(FishnGigsCard);

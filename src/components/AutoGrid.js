@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import MenuAppBar from './MenuAppBar'
 import FooterBar from './FooterBar'
 import TechnologyExpansionPanel from './TechnologyExpansionPanel'
+import ProjectsPanel from './ProjectsPanel'
 
 const styles = theme => ({
     root: {
@@ -35,7 +36,8 @@ function AutoGrid(props) {
                     <TechnologyExpansionPanel />
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    <Paper className={classes.paper}>Current Projects</Paper>
+                    {/*<Paper className={classes.paper}>Current Projects</Paper>*/}
+                    <ProjectsPanel />
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Paper className={classes.paper}>Blog</Paper>

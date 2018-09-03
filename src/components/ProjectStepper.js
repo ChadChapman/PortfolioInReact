@@ -8,27 +8,20 @@ import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
+import FishnGigsCard from './projects/FishnGigsCard'
 
-const tutorialSteps = [
+const projectCards = [
     {
-        label: 'How to be happy :)',
-        imgPath: '/static/images/steppers/1-happy.jpg',
+        label: 'FishnGigs',
+        imgPath: '/static/images/steppers/crustys.jpg',
+        projectCard: <FishnGigsCard />,
+
     },
     {
-        label: '1. Work with something that you like, like…',
-        imgPath: '/static/images/steppers/2-work.jpg',
-    },
-    {
-        label: '2. Keep your friends close to you and hangout with them',
-        imgPath: '/static/images/steppers/3-friends.jpg',
-    },
-    {
-        label: '3. Travel everytime that you have a chance',
-        imgPath: '/static/images/steppers/4-travel.jpg',
-    },
-    {
-        label: '4. And contribute to Material-UI :D',
-        imgPath: '/static/images/steppers/5-mui.png',
+        label: 'FishnGigs',
+        imgPath: '/static/images/steppers/crustys.jpg',
+        projectCard: <FishnGigsCard />,
+
     },
 ];
 
@@ -51,9 +44,18 @@ const styles = theme => ({
         overflow: 'hidden',
         width: '100%',
     },
+    slide1: {
+        background: '#FEA900',
+    },
+    slide2: {
+        background: '#B3DC4A',
+    },
+    slide3: {
+        background: '#6AC0FF',
+    },
 });
 
-class SwipeableTextMobileStepper extends React.Component {
+class ProjectStepper extends React.Component {
     state = {
         activeStep: 0,
     };
@@ -83,16 +85,27 @@ class SwipeableTextMobileStepper extends React.Component {
         return (
             <div className={classes.root}>
                 <Paper square elevation={0} className={classes.header}>
-                    <Typography>{tutorialSteps[activeStep].label}</Typography>
+                    <Typography>Current Projects</Typography>
                 </Paper>
+                {/*<Paper square elevation={0} className={classes.header}>*/}
+                    {/*<Typography>{tutorialSteps[activeStep].label}</Typography>*/}
+                {/*</Paper>*/}
                 <SwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                     index={this.state.activeStep}
                     onChangeIndex={this.handleStepChange}
                     enableMouseEvents
                 >
-                    {tutorialSteps.map(step => (
-                        <img key={step.label} className={classes.img} src={step.imgPath} alt={step.label} />
+                    {projectCards.map(card => (
+                        Object.assign({}, styles.slide1, card.projectCard),
+
+                        // fuck the card i think, either use a stepper or cards but not both
+                        // <div style={Object.assign({}, styles.slide, styles.slide2)}>
+                        // slide n°2
+                        // </div>
+                        {/*<img key={step.label} className={classes.img} src={step.imgPath} alt={step.label} />*/}
+                    {/*{step.projectCard}*/}
+
                     ))}
                 </SwipeableViews>
                 <MobileStepper
@@ -118,9 +131,9 @@ class SwipeableTextMobileStepper extends React.Component {
     }
 }
 
-SwipeableTextMobileStepper.propTypes = {
+ProjectStepper.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(SwipeableTextMobileStepper);
+export default withStyles(styles, { withTheme: true })(ProjectStepper);
