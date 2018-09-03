@@ -8,9 +8,17 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
+// const styles = {
+//     root: {
+//         width: 500,
+//     },
+// };
 const styles = {
     root: {
-        width: 500,
+        flexGrow: 1,
+    },
+    flex: {
+        flexGrow: 1,
     },
 };
 
@@ -32,7 +40,7 @@ class LabelBottomNavigation extends React.Component {
                 <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
                 <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
                 <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
-                <BottomNavigationAction label="Folder" value="folder" icon={<Icon>folder</Icon>} />
+                {/*<BottomNavigationAction label="Folder" value="folder" icon={<Icon>folder</Icon>} />*/}
             </BottomNavigation>
         );
     }

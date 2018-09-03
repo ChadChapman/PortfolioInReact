@@ -4,6 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import MenuAppBar from './MenuAppBar'
+import LabelBottomNavigation from './LabelBottomNavigation'
+import FooterBar from './FooterBar'
 
 const styles = theme => ({
     root: {
@@ -54,12 +56,27 @@ function AutoGrid(props) {
             </Grid>
             <Grid container spacing={24}>
                 <Grid item xs={12} sm={6}>
-                    <Paper className={classes.paper}>Volunteering</Paper>
-                </Grid>
-                <Grid item xs={12} sm={6}>
                     <Paper className={classes.paper}>Code Tacoma</Paper>
                 </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Paper className={classes.paper}>Interests & Achievements</Paper>
+                </Grid>
             </Grid>
+            {/*<Grid container spacing={24}>*/}
+                {/*<Grid item xs={6} sm={3}>*/}
+                    {/*<Paper className={classes.paper}>Background</Paper>*/}
+                {/*</Grid>*/}
+                {/*<Grid item xs={6} sm={3}>*/}
+                    {/*<Paper className={classes.paper}>Professional History</Paper>*/}
+                {/*</Grid>*/}
+                {/*<Grid item xs={6} sm={3}>*/}
+                    {/*<Paper className={classes.paper}>Education</Paper>*/}
+                {/*</Grid>*/}
+                {/*<Grid item xs={6} sm={3}>*/}
+                    {/*<Paper className={classes.paper}>Mentoring</Paper>*/}
+                {/*</Grid>*/}
+            {/*</Grid>*/}
+            <FooterBar />
         </div>
     );
 }
