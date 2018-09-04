@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import ProjectStepper from './ProjectStepper'
+// import ProjectStepper from '../../recyclebin/ProjectStepper'
 import FishnGigsCard from './projects/FishnGigsCard'
 
 const styles = theme => ({
@@ -32,7 +32,7 @@ function ProjectsPanel(props) {
             <Grid container spacing={24}>
                 <Grid item xs={12}>
                     {/*<ProjectStepper />*/}
-
+                    <FishnGigsCard />
                 </Grid>
             </Grid>
         </div>

@@ -44,6 +44,10 @@ const styles = theme => ({
     avatar: {
         backgroundColor: red[500],
     },
+    typographyText: {
+        textAlign: 'left',
+
+    },
 });
 
 class FishnGigsCard extends React.Component {
@@ -78,10 +82,10 @@ class FishnGigsCard extends React.Component {
                     title="mmmmmmmmmm"
                 />
                 <CardContent>
-                    <Typography component="p">
-                        Originally a monolith in Flask then later Django, FishnGigs is now a REST API
-                        with a React front-end.  It lives in a private repo but I am happy to share the
-                        code with potential employers.
+                    <Typography className={classes.typographyText} component="p">
+                        Originally a monolith in Flask then later in Django, FishnGigs is now a REST API
+                        with a React front-end.  It lives in a private repo but I am happy to share and review the
+                        code as needed.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
@@ -107,27 +111,32 @@ class FishnGigsCard extends React.Component {
                         <Typography paragraph variant="body2">
                             Background:
                         </Typography>
-                        <Typography paragraph>
+                        <Typography className={classes.typographyText} paragraph>
                             Niche industries like commercial fishing don't have
                             much in the way of online platforms, this project aims to
                             to help change that.
                         </Typography>
-                        <Typography paragraph>
+                        <Typography className={classes.typographyText} paragraph>
                             Here's a full list of all the technologies used so far:
                             Django Rest Framework (making Django, SQLite3 and Python rather implicit)
                             PostgreSQL, git, Linux, Digital Ocean and now Heroku as a platform.
-                            A Material Design aesthetic with the material-ui module frames the UI.
+                            A Material Design aesthetic with the material-ui module directs the UI.
                         </Typography>
-                        <Typography paragraph>
+                        <Typography className={classes.typographyText} paragraph>
                             Future technologies getting integrated to this project:
                             Redux (I've found it really insightful to start with using vanilla React
                             for a project then add Redux), react-router, Travis & Jenkins (I'm getting
                             better at this CI/CD thing), a back-end caching library (have not decided
                             on one quite yet) and Redis.
-                            The long-term plan for this project includes  
+                            The long-term plan for this project includes implementing a server-less
+                            architecture, probably with AWS Lambda.
                         </Typography>
-                        <Typography>
-                            Set aside off of the heat to let rest for 10 minutes, and then serve.
+                        <Typography className={classes.typographyText}>
+                            <a href="https://fishngigs.herokuapp.com/">Link to REST API</a>
+                        </Typography>
+                        <Typography className={classes.typographyText}>
+                            <a href="https://fngigs-front.herokuapp.com/">Link to front-end (as of
+                                9-3 has not been deployed live yet)</a>
                         </Typography>
                     </CardContent>
                 </Collapse>
@@ -136,7 +145,7 @@ class FishnGigsCard extends React.Component {
     }
 }
 
-FishnGigsCardCard.propTypes = {
+FishnGigsCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
