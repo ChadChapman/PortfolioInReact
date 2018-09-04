@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 // import ProjectStepper from '../../recyclebin/ProjectStepper'
 import FishnGigsCard from './projects/FishnGigsCard'
+import TacomaAPICard from './projects/TacomaAPICard'
 
 const styles = theme => ({
     root: {
@@ -33,6 +34,7 @@ function ProjectsPanel(props) {
                 <Grid item xs={12}>
                     {/*<ProjectStepper />*/}
                     <FishnGigsCard />
+                    <TacomaAPICard />
                 </Grid>
             </Grid>
         </div>
