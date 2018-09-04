@@ -37,6 +37,7 @@ function TechnologyExpansionPanel(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
+            {/*<ExpansionPanel position="fixed">*/}
             <ExpansionPanel>
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                     <LaptopIcon className={classes.heading}/>
