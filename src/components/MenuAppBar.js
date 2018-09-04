@@ -91,10 +91,12 @@ class MenuAppBar extends React.Component {
             <div className={classes.root}>
                 <AppBar>
                     <Toolbar>
-                        <Tooltip title="list of all sections">
+                        <Tooltip title="let's connect!">
                         <IconButton className={classes.leftIconButton} color="inherit" aria-label="Menu">
                             {/*<MenuIcon />*/}
-                            <i className="zmdi zmdi-flower-alt zmdi-hc-2x"></i>
+                             {/*<a href="https://www.linkedin.com/in/chadtchapman/">*/}
+                            <i className="zmdi zmdi-linkedin"></i>
+                            {/*</a>*/}
                         </IconButton>
                         </Tooltip>
                         {/*<Tooltip title="back to home">*/}
@@ -112,11 +114,11 @@ class MenuAppBar extends React.Component {
                         <Typography variant="title" color="inherit" className={classes.flex}>
                             Chad T. Chapman's Personal Page
                         </Typography>
-                        <Tooltip title="list of all sections">
+                        <Tooltip title="my Github">
                             <IconButton className={classes.rightIconButton} color="inherit" aria-label="Menu">
                                 {/*<MenuIcon />*/}
                                 {/*<p><i className="zmdi zmdi-flower-alt zmdi-hc-2x"></i></p>*/}
-                                <i className="zmdi zmdi-flower-alt zmdi-hc-2x"></i>
+                                <i className="zmdi zmdi-github-alt"></i>
                             </IconButton>
                         </Tooltip>
                         {/*</IconButton>*/}
