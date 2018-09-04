@@ -5,39 +5,31 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-// import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import WorkIcon from '@material-ui/icons/WorkRounded'
-import CodeIcon from '@material-ui/icons/CodeRounded'
-import CreateIcon from '@material-ui/icons/CreateRounded'
-import GroupIcon from '@material-ui/icons/GroupRounded'
 import Tooltip from '@material-ui/core/Tooltip'
-import HomeIcon from '@material-ui/icons/HomeRounded'
 
-const styles = {
+const styles = theme => ({
     root: {
-        //maxHeight: "100px",
         positionSticky: true,
         flexGrow: 1,
     },
     flex: {
         flexGrow: 1,
     },
-    menuButton: {
+    leftIconButton: {
         marginLeft: -12,
         marginRight: 20,
+        // marginTop: theme.spacing.unit * -1.5,
+        color: "orange",
     },
-    stickyNode: {
-
-
-
-    }
-};
+    rightIconButton: {
+        marginLeft: 12,
+        marginRight: -20,
+        // marginTop: theme.spacing.unit * -1.5,
+        color: "orange",
+    },
+});
 
 class MenuAppBar extends React.Component {
     state = {
@@ -45,11 +37,11 @@ class MenuAppBar extends React.Component {
         anchorEl: null,
     };
 
-    handleChange = event => {
+    handleChange = event => { //not currently used
         this.setState({ auth: event.target.checked });
     };
 
-    handleMenu = event => {
+    handleMenu = event => { //not currently used
         this.setState({ anchorEl: event.currentTarget });
     };
 
@@ -65,73 +57,37 @@ class MenuAppBar extends React.Component {
         return (
             <div className={classes.root}>
                 <AppBar>
-                {/* fixed, absolute, sticky static    */}
-                {/*<AppBar position="static">*/}
                     <Toolbar>
-                        {/*<Tooltip title="list of all sections">*/}
-                        {/*<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">*/}
-                            {/*<MenuIcon />*/}
-                        {/*</IconButton>*/}
-                        {/*</Tooltip>*/}
-                        {/*<Tooltip title="back to home">*/}
-                            {/*<IconButton*/}
-                                {/*aria-owns={open ? 'menu-appbar' : null}*/}
-                                {/*aria-haspopup="true"*/}
-                                {/*// onClick={this.handleMenu}*/}
-                                {/*color="inherit"*/}
-                            {/*>*/}
-                                {/*<HomeIcon />*/}
-                            {/*</IconButton>*/}
-                        {/*</Tooltip>*/}
-                        {/*<Tooltip title="back to home page">*/}
-                        {/*<IconButton className={classes.flex} color="inherit" aria-label="Back to Home">*/}
+                        <Tooltip title="let's connect!">
+                        <IconButton className={classes.leftIconButton}
+                                    href="https://www.linkedin.com/in/chadtchapman/"
+                                    aria-label="My LinkedIn Profile">
+                            <i className="zmdi zmdi-linkedin"></i>
+                        </IconButton>
+                        </Tooltip>
                         <Typography variant="title" color="inherit" className={classes.flex}>
                             Chad T. Chapman's Personal Page
                         </Typography>
-                        {/*</IconButton>*/}
-                        {/*</Tooltip>*/}
+                        <Tooltip title="my Github">
+                            <IconButton className={classes.rightIconButton}
+                                        href="https://github.com/ChadChapman"
+                                        aria-label="My Github profile">
+                                <i className="zmdi zmdi-github-alt"></i>
+                            </IconButton>
+                        </Tooltip>
                         {auth && (
                             <div>
-                                <Tooltip title="blog">
-                                <IconButton
-                                    aria-owns={open ? 'menu-appbar' : null}
-                                    aria-haspopup="true"
-                                    onClick={this.handleMenu}
-                                    color="inherit"
-                                >
-                                    <CreateIcon />
-                                </IconButton>
-                                </Tooltip>
-                                <Tooltip title="work history">
-                                <IconButton
-                                    aria-owns={open ? 'menu-appbar' : null}
-                                    aria-haspopup="true"
-                                    onClick={this.handleMenu}
-                                    color="inherit"
-                                >
-                                    <WorkIcon />
-                                </IconButton>
-                                </Tooltip>
-                                <Tooltip title="code samples">
-                                <IconButton
-                                    aria-owns={open ? 'menu-appbar' : null}
-                                    aria-haspopup="true"
-                                    onClick={this.handleMenu}
-                                    color="inherit"
-                                >
-                                    <CodeIcon />
-                                </IconButton>
-                                </Tooltip>
-                                {/*<Tooltip title="collaborations">*/}
+                                {/*<Tooltip title="blog">*/}
                                 {/*<IconButton*/}
                                     {/*aria-owns={open ? 'menu-appbar' : null}*/}
                                     {/*aria-haspopup="true"*/}
                                     {/*onClick={this.handleMenu}*/}
                                     {/*color="inherit"*/}
                                 {/*>*/}
-                                    {/*<GroupIcon />*/}
+                                    {/*<CreateIcon />*/}
                                 {/*</IconButton>*/}
                                 {/*</Tooltip>*/}
+
                                 <Menu
                                     id="menu-appbar"
                                     anchorEl={anchorEl}
