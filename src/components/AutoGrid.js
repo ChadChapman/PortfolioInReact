@@ -7,15 +7,25 @@ import MenuAppBar from './MenuAppBar'
 import FooterBar from './FooterBar'
 import TechnologyExpansionPanel from './TechnologyExpansionPanel'
 import ProjectsPanel from './ProjectsPanel'
+import BufferBar from './BufferBar'
 
 const styles = theme => ({
     root: {
+        marginTop: theme.spacing.unit * 4,
+        marginLeft: theme.spacing.unit * 2,
+        marginRight: theme.spacing.unit * 2,
+        marginBottom: theme.spacing.unit * 2,
+
         flexGrow: 1,
     },
     paper: {
+
         padding: theme.spacing.unit * 2,
         textAlign: 'center',
         color: theme.palette.text.secondary,
+    },
+    stickyNodes: {
+      position: 'fixed'
     },
 });
 
@@ -24,19 +34,21 @@ function AutoGrid(props) {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={24}>
-                <Grid item xs={12}>
-                    {/*<Paper className={classes.paper}>Technologies</Paper>*/}
-                    <MenuAppBar />
-                </Grid>
-            </Grid>
+            {/*<Grid container spacing={24}>*/}
+                {/*<Grid item xs={12}>*/}
+                    {/*/!*<Paper className={classes.paper}>Technologies</Paper>*!/*/}
+                    {/*<MenuAppBar />*/}
+                {/*</Grid>*/}
+            {/*</Grid>*/}
+            <BufferBar />
+            {/*<FooterBar />*/}
             <Grid container spacing={24}>
                 <Grid item xs={12} sm={4}>
                     {/*<Paper className={classes.paper}>Technologies</Paper>*/}
                     <TechnologyExpansionPanel />
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    {/*<Paper className={classes.paper}>Current Projects</Paper>*/}
+                    <Paper className={classes.paper}>Current Projects</Paper>
                     <ProjectsPanel />
                 </Grid>
                 <Grid item xs={12} sm={4}>

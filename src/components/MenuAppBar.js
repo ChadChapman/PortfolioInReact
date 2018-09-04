@@ -21,6 +21,8 @@ import HomeIcon from '@material-ui/icons/HomeRounded'
 
 const styles = {
     root: {
+        //maxHeight: "100px",
+        positionSticky: true,
         flexGrow: 1,
     },
     flex: {
@@ -30,6 +32,11 @@ const styles = {
         marginLeft: -12,
         marginRight: 20,
     },
+    stickyNode: {
+
+
+
+    }
 };
 
 class MenuAppBar extends React.Component {
@@ -57,31 +64,25 @@ class MenuAppBar extends React.Component {
 
         return (
             <div className={classes.root}>
-                {/*<FormGroup>*/}
-                    {/*<FormControlLabel*/}
-                        {/*control={*/}
-                            {/*<Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />*/}
-                        {/*}*/}
-                        {/*label={auth ? 'Logout' : 'Login'}*/}
-                    {/*/>*/}
-                {/*</FormGroup>*/}
-                <AppBar position="static">
+                <AppBar>
+                {/* fixed, absolute, sticky static    */}
+                {/*<AppBar position="static">*/}
                     <Toolbar>
-                        <Tooltip title="list of all sections">
-                        <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                            <MenuIcon />
-                        </IconButton>
-                        </Tooltip>
-                        <Tooltip title="back to home">
-                            <IconButton
-                                aria-owns={open ? 'menu-appbar' : null}
-                                aria-haspopup="true"
-                                // onClick={this.handleMenu}
-                                color="inherit"
-                            >
-                                <HomeIcon />
-                            </IconButton>
-                        </Tooltip>
+                        {/*<Tooltip title="list of all sections">*/}
+                        {/*<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">*/}
+                            {/*<MenuIcon />*/}
+                        {/*</IconButton>*/}
+                        {/*</Tooltip>*/}
+                        {/*<Tooltip title="back to home">*/}
+                            {/*<IconButton*/}
+                                {/*aria-owns={open ? 'menu-appbar' : null}*/}
+                                {/*aria-haspopup="true"*/}
+                                {/*// onClick={this.handleMenu}*/}
+                                {/*color="inherit"*/}
+                            {/*>*/}
+                                {/*<HomeIcon />*/}
+                            {/*</IconButton>*/}
+                        {/*</Tooltip>*/}
                         {/*<Tooltip title="back to home page">*/}
                         {/*<IconButton className={classes.flex} color="inherit" aria-label="Back to Home">*/}
                         <Typography variant="title" color="inherit" className={classes.flex}>

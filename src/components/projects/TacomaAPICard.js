@@ -19,7 +19,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const styles = theme => ({
     card: {
-        maxWidth: 400,
+        //maxWidth: 400,
     },
     media: {
         // height: 0,
@@ -75,7 +75,7 @@ class TacomaAPICard extends React.Component {
                     //     </IconButton>
                     // }
                     title="Tacoma Tech Info API"
-                    subheader="listings about the Tacoma tech industry ecosystem"
+                    subheader="Tacoma tech ecosystem listings"
                 />
                 {/*<CardMedia*/}
                 {/*className={classes.media}*/}
@@ -91,9 +91,9 @@ class TacomaAPICard extends React.Component {
                 {/*/>*/}
                 <CardContent>
                     <Typography className={classes.typographyText} component="p">
-                        This began as solely an Express REST API to provide
-                        information and endpoints for creating front-end side projects.
-                        A React front-end was added later.
+                        This began as solely an Express REST API to aggregate
+                        information and serve endpoints for anyone interested in
+                        creating front-end side projects. A React front-end was added later.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
