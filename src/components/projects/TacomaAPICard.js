@@ -78,16 +78,16 @@ class FishnGigsCard extends React.Component {
                     subheader="a jobs & information board for the commercial fishing industry"
                 />
                 {/*<CardMedia*/}
-                    {/*className={classes.media}*/}
-                    {/*image="./crustys.jpg"*/}
-                    {/*title="mmmmmmmmmm"*/}
+                {/*className={classes.media}*/}
+                {/*image="./crustys.jpg"*/}
+                {/*title="mmmmmmmmmm"*/}
                 {/*/>*/}
                 {/*<CardMedia*/}
-                    {/*component="img"*/}
-                    {/*className={classes.media}*/}
-                    {/*height="170"*/}
-                    {/*image= "./crustys.jpg"*/}
-                    {/*title="Contemplative Reptile"*/}
+                {/*component="img"*/}
+                {/*className={classes.media}*/}
+                {/*height="170"*/}
+                {/*image= "./crustys.jpg"*/}
+                {/*title="Contemplative Reptile"*/}
                 {/*/>*/}
                 <CardContent>
                     <Typography className={classes.typographyText} component="p">
@@ -98,10 +98,10 @@ class FishnGigsCard extends React.Component {
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
                     {/*<IconButton aria-label="Add to favorites">*/}
-                        {/*<FavoriteIcon />*/}
+                    {/*<FavoriteIcon />*/}
                     {/*</IconButton>*/}
                     {/*<IconButton aria-label="Share">*/}
-                        {/*<ShareIcon />*/}
+                    {/*<ShareIcon />*/}
                     {/*</IconButton>*/}
                     <IconButton
                         className={classnames(classes.expand, {
