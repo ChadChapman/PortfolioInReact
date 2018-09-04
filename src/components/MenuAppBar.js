@@ -21,25 +21,48 @@ import HomeIcon from '@material-ui/icons/HomeRounded'
 
 
 
-const styles = {
+// const styles = {
+//     root: {
+//         //maxHeight: "100px",
+//         positionSticky: true,
+//         flexGrow: 1,
+//     },
+//     flex: {
+//         flexGrow: 1,
+//     },
+//     menuButton: {
+//         marginLeft: -12,
+//         marginRight: 20,
+//         // marginBottom: spacing.unit * 4,
+//     },
+//     stickyNode: {
+//
+//
+//
+//     }
+// };
+
+const styles = theme => ({
     root: {
-        //maxHeight: "100px",
         positionSticky: true,
         flexGrow: 1,
     },
     flex: {
         flexGrow: 1,
     },
-    menuButton: {
+    leftIconButton: {
         marginLeft: -12,
         marginRight: 20,
+        // marginTop: theme.spacing.unit * -1.5,
+        color: "orange",
     },
-    stickyNode: {
-
-
-
-    }
-};
+    rightIconButton: {
+        marginLeft: 12,
+        marginRight: -20,
+        // marginTop: theme.spacing.unit * -1.5,
+        color: "orange",
+    },
+});
 
 class MenuAppBar extends React.Component {
     state = {
@@ -67,14 +90,13 @@ class MenuAppBar extends React.Component {
         return (
             <div className={classes.root}>
                 <AppBar>
-                {/* fixed, absolute, sticky static    */}
-                {/*<AppBar position="static">*/}
                     <Toolbar>
-                        {/*<Tooltip title="list of all sections">*/}
-                        {/*<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">*/}
+                        <Tooltip title="list of all sections">
+                        <IconButton className={classes.leftIconButton} color="inherit" aria-label="Menu">
                             {/*<MenuIcon />*/}
-                        {/*</IconButton>*/}
-                        {/*</Tooltip>*/}
+                            <i className="zmdi zmdi-flower-alt zmdi-hc-2x"></i>
+                        </IconButton>
+                        </Tooltip>
                         {/*<Tooltip title="back to home">*/}
                             {/*<IconButton*/}
                                 {/*aria-owns={open ? 'menu-appbar' : null}*/}
@@ -90,50 +112,28 @@ class MenuAppBar extends React.Component {
                         <Typography variant="title" color="inherit" className={classes.flex}>
                             Chad T. Chapman's Personal Page
                         </Typography>
+                        <Tooltip title="list of all sections">
+                            <IconButton className={classes.rightIconButton} color="inherit" aria-label="Menu">
+                                {/*<MenuIcon />*/}
+                                {/*<p><i className="zmdi zmdi-flower-alt zmdi-hc-2x"></i></p>*/}
+                                <i className="zmdi zmdi-flower-alt zmdi-hc-2x"></i>
+                            </IconButton>
+                        </Tooltip>
                         {/*</IconButton>*/}
                         {/*</Tooltip>*/}
                         {auth && (
                             <div>
-                                <Tooltip title="blog">
-                                <IconButton
-                                    aria-owns={open ? 'menu-appbar' : null}
-                                    aria-haspopup="true"
-                                    onClick={this.handleMenu}
-                                    color="inherit"
-                                >
-                                    <CreateIcon />
-                                </IconButton>
-                                </Tooltip>
-                                <Tooltip title="work history">
-                                <IconButton
-                                    aria-owns={open ? 'menu-appbar' : null}
-                                    aria-haspopup="true"
-                                    onClick={this.handleMenu}
-                                    color="inherit"
-                                >
-                                    <WorkIcon />
-                                </IconButton>
-                                </Tooltip>
-                                <Tooltip title="code samples">
-                                <IconButton
-                                    aria-owns={open ? 'menu-appbar' : null}
-                                    aria-haspopup="true"
-                                    onClick={this.handleMenu}
-                                    color="inherit"
-                                >
-                                    <CodeIcon />
-                                </IconButton>
-                                </Tooltip>
-                                {/*<Tooltip title="collaborations">*/}
+                                {/*<Tooltip title="blog">*/}
                                 {/*<IconButton*/}
                                     {/*aria-owns={open ? 'menu-appbar' : null}*/}
                                     {/*aria-haspopup="true"*/}
                                     {/*onClick={this.handleMenu}*/}
                                     {/*color="inherit"*/}
                                 {/*>*/}
-                                    {/*<GroupIcon />*/}
+                                    {/*<CreateIcon />*/}
                                 {/*</IconButton>*/}
                                 {/*</Tooltip>*/}
+
                                 <Menu
                                     id="menu-appbar"
                                     anchorEl={anchorEl}
