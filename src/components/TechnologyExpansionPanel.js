@@ -12,6 +12,9 @@ import DBsCard from './technologies/TechCardDBs'
 import LaptopIcon from '@material-ui/icons/LaptopRounded'
 import ToolsCard from './technologies/TechCardTools'
 import FrameworksCard from './technologies/TechCardFrameworks'
+import CodeIcon from '@material-ui/icons/CodeRounded'
+import StorageIcon from '@material-ui/icons/StorageRounded'
+import KeyboardIcon from '@material-ui/icons/KeyboardRounded'
 
 
 const styles = theme => ({
@@ -23,11 +26,14 @@ const styles = theme => ({
         // fontSize: theme.typography.pxToRem(15),
         //  textJustify: theme.typography.title,
         // fontWeight: theme.typography.fontWeightRegular,
+        textAlign: 'left',
         fontSize: theme.typography.pxToRem(15),
         flexBasis: '33.33%',
+
         flexShrink: 0,
     },
     secondaryHeading: {
+        textAlign: 'center',
         fontSize: theme.typography.pxToRem(15),
         color: theme.palette.text.secondary,
     },
@@ -41,7 +47,11 @@ function TechnologyExpansionPanel(props) {
             <ExpansionPanel>
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                     <LaptopIcon className={classes.heading}/>
-                    <Typography className={classes.secondaryHeading}>Technologies</Typography>
+                    {/*<i className="zmdi zmdi-laptop zmdi-hc-2px"></i>*/}
+                    {/*<CodeIcon className={classes.heading}/>*/}
+                    {/*<StorageIcon className={classes.heading}/>*/}
+                    {/*<KeyboardIcon className={classes.heading}/>*/}
+                    {/*<Typography className={classes.secondaryHeading}>Technologies</Typography>*/}
                     {/*<Typography className={classes.heading}>Technologies</Typography>*/}
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>

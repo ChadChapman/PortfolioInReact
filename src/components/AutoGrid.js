@@ -11,7 +11,7 @@ import BufferBar from './BufferBar'
 
 const styles = theme => ({
     root: {
-        marginTop: theme.spacing.unit * 4,
+        marginTop: theme.spacing.unit * 2,
         marginLeft: theme.spacing.unit * 2,
         marginRight: theme.spacing.unit * 2,
         marginBottom: theme.spacing.unit * 2,
@@ -22,7 +22,9 @@ const styles = theme => ({
 
         padding: theme.spacing.unit * 2,
         textAlign: 'center',
-        color: theme.palette.text.secondary,
+        // color: theme.palette.text.secondary,
+        color: theme.palette.text.title,
+        // marginBottom: theme.spacing.unit * 2,
     },
     stickyNodes: {
       position: 'fixed'
@@ -44,6 +46,7 @@ function AutoGrid(props) {
                 <Grid item xs={12} sm={6}>
                     {/*<Paper className={classes.paper}>Current Projects</Paper>*/}
                     {/*<ProjectsPanel />*/}
+                    <Paper className={classes.paper}>Technologies</Paper>
                     <TechnologyExpansionPanel />
                 </Grid>
                 <Grid item xs={12} sm={3}>

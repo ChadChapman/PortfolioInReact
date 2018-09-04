@@ -32,8 +32,9 @@ function ProjectsPanel(props) {
             {/*<Typography className={classes.heading}>Current Projects</Typography>*/}
             <Grid container spacing={24}>
                 <Grid item xs={12}>
-                    {/*<ProjectStepper />*/}
                     <FishnGigsCard />
+                </Grid>
+                <Grid item xs={12}>
                     <TacomaAPICard />
                 </Grid>
             </Grid>
