@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AutoGridHeader from './components/AutoGridAppBarHeader'
 import AutoGrid from './components/AutoGrid'
 import MenuAppBar from './components/MenuAppBar'
 

@@ -39,7 +39,7 @@ function FrameworksCard(props) {
                 </Typography>
                 <Typography component="p">
                     Node.js, Django, React.js (made this), Django REST Framework
-                    , Express.js, Flask, Java FX, Java Swing, Ruby on Rails
+                    , Android, Express.js, Flask, Java FX, Java Swing, Ruby on Rails
                 </Typography>
             </CardContent>
         </Card>
