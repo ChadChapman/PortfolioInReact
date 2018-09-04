@@ -5,42 +5,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-// import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import WorkIcon from '@material-ui/icons/WorkRounded'
-import CodeIcon from '@material-ui/icons/CodeRounded'
-import CreateIcon from '@material-ui/icons/CreateRounded'
-import GroupIcon from '@material-ui/icons/GroupRounded'
 import Tooltip from '@material-ui/core/Tooltip'
-import HomeIcon from '@material-ui/icons/HomeRounded'
-
-
-
-// const styles = {
-//     root: {
-//         //maxHeight: "100px",
-//         positionSticky: true,
-//         flexGrow: 1,
-//     },
-//     flex: {
-//         flexGrow: 1,
-//     },
-//     menuButton: {
-//         marginLeft: -12,
-//         marginRight: 20,
-//         // marginBottom: spacing.unit * 4,
-//     },
-//     stickyNode: {
-//
-//
-//
-//     }
-// };
 
 const styles = theme => ({
     root: {
@@ -70,11 +37,11 @@ class MenuAppBar extends React.Component {
         anchorEl: null,
     };
 
-    handleChange = event => {
+    handleChange = event => { //not currently used
         this.setState({ auth: event.target.checked });
     };
 
-    handleMenu = event => {
+    handleMenu = event => { //not currently used
         this.setState({ anchorEl: event.currentTarget });
     };
 
@@ -92,37 +59,22 @@ class MenuAppBar extends React.Component {
                 <AppBar>
                     <Toolbar>
                         <Tooltip title="let's connect!">
-                        <IconButton className={classes.leftIconButton} color="inherit" aria-label="Menu">
-                            {/*<MenuIcon />*/}
-                             {/*<a href="https://www.linkedin.com/in/chadtchapman/">*/}
+                        <IconButton className={classes.leftIconButton}
+                                    href="https://www.linkedin.com/in/chadtchapman/"
+                                    aria-label="My LinkedIn Profile">
                             <i className="zmdi zmdi-linkedin"></i>
-                            {/*</a>*/}
                         </IconButton>
                         </Tooltip>
-                        {/*<Tooltip title="back to home">*/}
-                            {/*<IconButton*/}
-                                {/*aria-owns={open ? 'menu-appbar' : null}*/}
-                                {/*aria-haspopup="true"*/}
-                                {/*// onClick={this.handleMenu}*/}
-                                {/*color="inherit"*/}
-                            {/*>*/}
-                                {/*<HomeIcon />*/}
-                            {/*</IconButton>*/}
-                        {/*</Tooltip>*/}
-                        {/*<Tooltip title="back to home page">*/}
-                        {/*<IconButton className={classes.flex} color="inherit" aria-label="Back to Home">*/}
                         <Typography variant="title" color="inherit" className={classes.flex}>
                             Chad T. Chapman's Personal Page
                         </Typography>
                         <Tooltip title="my Github">
-                            <IconButton className={classes.rightIconButton} color="inherit" aria-label="Menu">
-                                {/*<MenuIcon />*/}
-                                {/*<p><i className="zmdi zmdi-flower-alt zmdi-hc-2x"></i></p>*/}
+                            <IconButton className={classes.rightIconButton}
+                                        href="https://github.com/ChadChapman"
+                                        aria-label="My Github profile">
                                 <i className="zmdi zmdi-github-alt"></i>
                             </IconButton>
                         </Tooltip>
-                        {/*</IconButton>*/}
-                        {/*</Tooltip>*/}
                         {auth && (
                             <div>
                                 {/*<Tooltip title="blog">*/}
