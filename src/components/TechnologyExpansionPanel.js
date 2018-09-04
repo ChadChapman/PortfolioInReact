@@ -6,19 +6,18 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Paper from "@material-ui/core/Paper";
 import Grid from '@material-ui/core/Grid';
-import LanguagesCard from './TechCardLanguages';
-import DBsCard from './TechCardDBs'
-import ImportantDevicesIcon from '@material-ui/icons/ImportantDevicesRounded'
+import LanguagesCard from './technologies/TechCardLanguages';
+import DBsCard from './technologies/TechCardDBs'
 import LaptopIcon from '@material-ui/icons/LaptopRounded'
-import ToolsCard from './TechCardTools'
-import FrameworksCard from './TechCardFrameworks'
+import ToolsCard from './technologies/TechCardTools'
+import FrameworksCard from './technologies/TechCardFrameworks'
 
 
 const styles = theme => ({
     root: {
-        width: '100%',
+        //width: '100%',
+        flexGrow: 1,
     },
     heading: {
         // fontSize: theme.typography.pxToRem(15),
