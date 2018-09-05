@@ -26,32 +26,34 @@ const styles = {
     },
 };
 
-function BlogInfoCard(props) {
+function EduInfoCard(props) {
     const { classes } = props;
     const bull = <span className={classes.bullet}>•</span>;
 
     return (
         <Card className={classes.card}>
             <CardContent>
-                <Typography className={classes.title} color="textSecondary">
-                    Whoops, I haven't migrated my blog over to this site yet!
-                </Typography>
+                {/*<Typography className={classes.title} color="textSecondary">*/}
+                    {/*Whoops, I haven't migrated my blog over to this site yet!*/}
+                {/*</Typography>*/}
                 {/*<Typography variant="headline" component="h2">*/}
                 <Typography className={classes.title} color="textSecondary">
-                <p>warning: the older stuff is  a bit cringy</p>
-                <p>{bull} {bull} {bull} {bull} {bull} {bull}</p>
-                <p>OK, you were warned</p>
+                    <p>University of Washington, Bachelor's of Science in Computer Science</p>
+                    <p>Clubs: Upsilon Pi Epsilon Computing Honors Society, Huscii Coding, Women
+                    in Computer Science</p>
+                    <p>TA for TCSS 343, Analysis and Design of Algorithms </p>
+                    <p>3.7 GPA, 5x Dean's List</p>
                 </Typography>
             </CardContent>
             {/*<CardActions>*/}
-                {/*<Button href="http://www.codecrab.me/" size="small">old blog</Button>*/}
+            {/*<Button href="http://www.codecrab.me/" size="small">old blog</Button>*/}
             {/*</CardActions>*/}
         </Card>
     );
 }
 
-BlogInfoCard.propTypes = {
+EduInfoCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BlogInfoCard);
+export default withStyles(styles)(EduInfoCard);
