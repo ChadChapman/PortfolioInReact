@@ -9,6 +9,8 @@ import ProjectsPanel from './ProjectsPanel'
 import BufferBar from './BufferBar'
 import BlogDialog from './dialogs/BlogDialog'
 import EducationDialog from './dialogs/EducationDialog'
+import BackgroundDialog from './dialogs/BackgroundDialog'
+import HistoryDialog from './dialogs/HistoryDialog'
 
 const styles = theme => ({
     root: {
@@ -81,7 +83,10 @@ function AutoGrid(props) {
             </Grid>
             <Grid container spacing={24}>
                 <Grid item xs={6} sm={4}>
-                    <Paper className={classes.paper}>Personal Background</Paper>
+                    {/*<Paper className={classes.paper}>Personal Background</Paper>*/}
+                    <Paper className={classes.paper}>
+                        <BackgroundDialog />
+                    </Paper>
                 </Grid>
                 <Grid item xs={6} sm={4}>
                     <Paper className={classes.paper}>Professional History</Paper>
@@ -104,20 +109,6 @@ function AutoGrid(props) {
                     <Paper className={classes.paper}>Interests & Achievements</Paper>
                 </Grid>
             </Grid>
-            {/*<Grid container spacing={24}>*/}
-                {/*<Grid item xs={6} sm={3}>*/}
-                    {/*<Paper className={classes.paper}>Background</Paper>*/}
-                {/*</Grid>*/}
-                {/*<Grid item xs={6} sm={3}>*/}
-                    {/*<Paper className={classes.paper}>Professional History</Paper>*/}
-                {/*</Grid>*/}
-                {/*<Grid item xs={6} sm={3}>*/}
-                    {/*<Paper className={classes.paper}>Education</Paper>*/}
-                {/*</Grid>*/}
-                {/*<Grid item xs={6} sm={3}>*/}
-                    {/*<Paper className={classes.paper}>Mentoring</Paper>*/}
-                {/*</Grid>*/}
-            {/*</Grid>*/}
             <FooterBar />
         </div>
 
