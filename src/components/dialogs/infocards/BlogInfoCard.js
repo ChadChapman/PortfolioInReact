@@ -33,10 +33,10 @@ function BlogInfoCard(props) {
         <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.title} color="textSecondary">
-                    Word of the Day
+                    Whoops, I haven't migrated my blog over to this site yet!
                 </Typography>
                 <Typography variant="headline" component="h2">
-                    be
+                    in case you are interested in it:
                     {bull}
                     nev
                     {bull}o{bull}
