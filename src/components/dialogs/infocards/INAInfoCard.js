@@ -26,21 +26,26 @@ const styles = {
     },
 };
 
-function BlogInfoCard(props) {
+function INAInfoCard(props) {
     const { classes } = props;
     const bull = <span className={classes.bullet}>•</span>;
 
     return (
         <Card className={classes.card}>
             <CardContent>
-                <Typography className={classes.title} color="textSecondary">
-                    Whoops, I haven't migrated my blog over to this site yet!
-                </Typography>
+                {/*<Typography className={classes.title} color="textSecondary">*/}
+                    {/*Whoops, I haven't migrated my blog over to this site yet!*/}
+                {/*</Typography>*/}
                 {/*<Typography variant="headline" component="h2">*/}
                 <Typography className={classes.title} color="textSecondary">
-                    <p>warning: the older stuff is  a bit cringy</p>
-                    <p>{bull} {bull} {bull} {bull} {bull} {bull}</p>
-                    <p>OK, you were warned</p>
+                    <h3>Interests & Achievements</h3>
+                    <p>Officer {bull} Upsilon Pi Epsilon, Academic Year 2017-2018</p>
+                    <p>Academic Dean's List {bull} 5x - University of Washington Tacoma</p>
+                    <p>Founder {bull} Code Tacoma - Tacoma's most active technology Meetup with 700+ members</p>
+                    <p>Founder {bull} Tacoma CS Tutors - Online tutoring business</p>
+                    <p>Eagle Scout</p>
+                    {/*<p>{bull} {bull} {bull} {bull} {bull} {bull}</p>*/}
+                    {/*<p>OK, you were warned</p>*/}
                 </Typography>
             </CardContent>
             {/*<CardActions>*/}
@@ -50,8 +55,8 @@ function BlogInfoCard(props) {
     );
 }
 
-BlogInfoCard.propTypes = {
+INAInfoCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BlogInfoCard);
+export default withStyles(styles)(INAInfoCard);
