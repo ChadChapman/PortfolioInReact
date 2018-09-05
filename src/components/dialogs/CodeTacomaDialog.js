@@ -6,7 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-import BlogInfoCard from './infocards/BlogInfoCard'
+import CTInfoCard from './infocards/CodeTacomaInfoCard'
 import Typography from '@material-ui/core/Typography'
 
 function Transition(props) {
@@ -33,7 +33,7 @@ const styles = theme => ({
     },
 });
 
-class BlogDialog extends React.Component {
+class CodeTacomaDialog extends React.Component {
     state = {
         open: false,
     };
@@ -51,7 +51,7 @@ class BlogDialog extends React.Component {
             <div>
                 <Button onClick={this.handleClickOpen}
                         fullWidth="true">
-                    Blog
+                    Code Tacoma
                 </Button>
                 <Dialog
                     open={this.state.open}
@@ -61,22 +61,22 @@ class BlogDialog extends React.Component {
                     aria-labelledby="alert-dialog-slide-title"
                     aria-describedby="alert-dialog-slide-description"
                 >
-                    <DialogTitle id="alert-dialog-slide-title">
-                        {"Where's your blog, Chad?"}
-                    </DialogTitle>
+                    {/*<DialogTitle id="alert-dialog-slide-title">*/}
+                        {/*{"Where's your blog, Chad?"}*/}
+                    {/*</DialogTitle>*/}
                     <DialogContent>
                         {/*<DialogContentText id="alert-dialog-slide-description">*/}
                         {/*<BlogInfoCard />                            */}
                         {/*</DialogContentText>*/}
-                        <BlogInfoCard />
+                        <CTInfoCard />
                     </DialogContent>
                     <DialogActions>
-                        <Button onClick={this.handleClose} color="primary">
-                            nah, I'm good
+                        <Button onClick={this.handleClose} color="inherit">
+                            Go Rainiers!
                         </Button>
-                        <Button href="http://www.codecrab.me/" color="primary">
-                            to the old blog!
-                        </Button>
+                        {/*<Button href="http://www.codecrab.me/" color="primary">*/}
+                            {/*to the old blog!*/}
+                        {/*</Button>*/}
                     </DialogActions>
                 </Dialog>
             </div>
@@ -84,4 +84,4 @@ class BlogDialog extends React.Component {
     }
 }
 
-export default BlogDialog;
+export default CodeTacomaDialog;
