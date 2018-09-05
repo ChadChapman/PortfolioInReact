@@ -120,16 +120,21 @@ class TacomaAPICard extends React.Component {
                             Background:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            There is no single source of info I could find which held
-                            all the info I was interested in about Tacoma's tech scene.
-                            So...I made one!  My hope was this could also serve as a
+                            There is no single source I could find which held
+                            all the info about Tacoma's tech scene.
+                            So...I made one!
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
+                            My hope was this could also serve as a
                             back-end service for other people's side projects as needed.
                             The front-end is public but I still need to refactor the back
                             to use config vars before it's made public, however I'm
                             happy to share the API code as needed.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            Here's a full list of all the technologies used so far:
+                            A full list of all the technologies used so far:
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
                             Node.js, PostgreSQL, Express.js, git, React.js, Redux
                             , yarn, Linux, and Heroku.
                             A Material Design aesthetic with the material-ui module directs the UI.
@@ -137,21 +142,26 @@ class TacomaAPICard extends React.Component {
                         <Typography className={classes.typographyText} paragraph>
                             I opened up the React front-end of this project to Code Tacoma members
                             in the event anyone was interested in collaborating so I could
-                            learn and boost my team project experience.  Two other members
+                            collaborate and boost my team project experience.  Two other members
                             contributed as indicated in the project's git history.  As the
                             master branch stands now, there are tools and libraries implemented
-                             which are a bit beyond my current React grok-level.
+                             which are a bit beyond my current React grok-level. I've decided to
+                            fork this project so I can get some practice
+                            implementing the portions done by other contributors.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
                             Future technologies getting integrated to this project:
-                            I've decided to fork this project so I can get some practice
-                            implementing the portions done by other contributors.
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
                             Docker (I'm still tuning my "compose" skills), Travis & Jenkins
                             (I'm getting better at this CI/CD thing), a back-end caching
                             module (have not decided on one quite yet).
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
                             The long-term plan for this project includes implementing a server-less
-                            architecture, probably with AWS Lambda as well as aggregation of data
-                            through some API calls to resources like TechCrunch, MapServer and others..
+                            architecture, probably with AWS Lambda as well as programmatic aggregation
+                            of data through some API calls to resources like TechCrunch,
+                            MapServer and others.
                         </Typography>
                         <Typography className={classes.typographyText}>
                             <a href="http://www.codetacoma.org">Link to REST API</a>

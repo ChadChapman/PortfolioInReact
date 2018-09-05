@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Tooltip from '@material-ui/core/Tooltip'
+//import amberColor from '@material-ui/colors/amber'
 
 const styles = theme => ({
     root: {
@@ -18,16 +19,20 @@ const styles = theme => ({
         flexGrow: 1,
     },
     leftIconButton: {
-        marginLeft: -12,
-        marginRight: 20,
+        // marginLeft: -12,
+        marginLeft: theme.spacing.unit * -2,
+        //marginRight: 20,
+        marginRight: theme.spacing.unit * 2,
         // marginTop: theme.spacing.unit * -1.5,
-        color: "orange",
+        color: "cyan",
     },
     rightIconButton: {
-        marginLeft: 12,
-        marginRight: -20,
+        // marginLeft: 12,
+        marginLeft: theme.spacing.unit * 2,
+        // marginRight: -20,
+        marginRight: theme.spacing.unit * -2,
         // marginTop: theme.spacing.unit * -1.5,
-        color: "orange",
+        color: "cyan",
     },
 });
 
