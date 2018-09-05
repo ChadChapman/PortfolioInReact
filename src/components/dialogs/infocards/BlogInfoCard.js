@@ -43,9 +43,9 @@ function BlogInfoCard(props) {
                     OK, you were warned...
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button href="http://www.codecrab.me/" size="small">old blog</Button>
-            </CardActions>
+            {/*<CardActions>*/}
+                {/*<Button href="http://www.codecrab.me/" size="small">old blog</Button>*/}
+            {/*</CardActions>*/}
         </Card>
     );
 }

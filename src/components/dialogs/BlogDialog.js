@@ -8,13 +8,13 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import BlogInfoCard from './infocards/BlogInfoCard'
 
-// function Transition(props) {
-//     return <Slide direction="up" {...props} />;
-// }
-
 function Transition(props) {
-    return <BlogInfoCard />
+    return <Slide direction="up" {...props} />;
 }
+
+// function Transition(props) {
+//     return <BlogInfoCard />
+// }
 
 class BlogDialog extends React.Component {
     state = {
@@ -32,7 +32,7 @@ class BlogDialog extends React.Component {
     render() {
         return (
             <div>
-                <Button onClick={this.handleClickOpen}>Slide in alert dialog</Button>
+                <Button onClick={this.handleClickOpen}>Blog</Button>
                 <Dialog
                     open={this.state.open}
                     TransitionComponent={Transition}
@@ -42,20 +42,20 @@ class BlogDialog extends React.Component {
                     aria-describedby="alert-dialog-slide-description"
                 >
                     <DialogTitle id="alert-dialog-slide-title">
-                        {"Use Google's location service?"}
+                        {"Where's your blog, Chad?"}
                     </DialogTitle>
                     <DialogContent>
-                        <DialogContentText id="alert-dialog-slide-description">
-                            Let Google help apps determine location. This means sending anonymous location data to
-                            Google, even when no apps are running.
-                        </DialogContentText>
+                        {/*<DialogContentText id="alert-dialog-slide-description">*/}
+                            {/*<BlogInfoCard />                            */}
+                        {/*</DialogContentText>*/}
+                        <BlogInfoCard />
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClose} color="primary">
-                            Disagree
+                            nah, I'm good
                         </Button>
-                        <Button onClick={this.handleClose} color="primary">
-                            Agree
+                        <Button href="http://www.codecrab.me/" color="primary">
+                            to the old blog!
                         </Button>
                     </DialogActions>
                 </Dialog>
