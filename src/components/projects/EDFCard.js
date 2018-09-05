@@ -11,7 +11,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import green from '@material-ui/core/colors/green';
+import teal from '@material-ui/core/colors/teal';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -43,7 +43,7 @@ const styles = theme => ({
         transform: 'rotate(180deg)',
     },
     avatar: {
-        backgroundColor: green[500],
+        backgroundColor: teal[500],
     },
     typographyText: {
         textAlign: 'left',
@@ -51,7 +51,7 @@ const styles = theme => ({
     },
 });
 
-class TacomaAPICard extends React.Component {
+class EDFCard extends React.Component {
     state = { expanded: false };
 
     handleExpandClick = () => {
@@ -65,8 +65,8 @@ class TacomaAPICard extends React.Component {
             <Card className={classes.card}>
                 <CardHeader
                     avatar={
-                        <Avatar aria-label="Tacoma Tech API" className={classes.avatar}>
-                            T
+                        <Avatar aria-label="EDF Web App" className={classes.avatar}>
+                            E
                         </Avatar>
                     }
                     // action={
@@ -74,8 +74,9 @@ class TacomaAPICard extends React.Component {
                     //         <MoreVertIcon />
                     //     </IconButton>
                     // }
-                    title="Tacoma Tech Info API"
-                    subheader="Tacoma tech ecosystem listings"
+                    title="EDF GIS Data Web App"
+                    subheader="Environmental Defense Fund targeted health and demographics
+                    info portal"
                 />
                 {/*<CardMedia*/}
                 {/*className={classes.media}*/}
@@ -91,9 +92,12 @@ class TacomaAPICard extends React.Component {
                 {/*/>*/}
                 <CardContent>
                     <Typography className={classes.typographyText} component="p">
-                        This began as solely an Express REST API to aggregate
-                        information and serve endpoints for anyone interested in
-                        creating front-end side projects. A React front-end was added later.
+                        Through the connections of a Code Tacoma member, we have partnered
+                        with the EDF to create a data-intensive web application.  GIS data
+                        will be the foundation with the aim of drawing insights and
+                        educating the public in regards to the externalities of specific
+                        industry practices.  This is a really exciting opportunity for
+                        cross-pollination between GIS, software, data science and UX disciplines.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
@@ -120,54 +124,30 @@ class TacomaAPICard extends React.Component {
                             Background:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            There is no single source I could find which held
-                            all the info about Tacoma's tech scene.
-                            So...I made one!
+                            This is a green field project with a client who is open and grateful to be
+                            working with us.  It should be quite a ride with a steep learning curve.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            My hope was this could also serve as a
-                            back-end service for other people's side projects as needed.
-                            The front-end is public but I still need to refactor the back
-                            to use config vars before it's made public, however I'm
-                            happy to share the API code as needed.
+                            Here's a full list of all the technologies used so far:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            A full list of all the technologies used so far:
+                            .....just kidding, we are still in the planning and architecture
+                            stages.  Technologies for now include pens, dry-erase markers,
+                            napkins and notebooks.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            Node.js, PostgreSQL, Express.js, git, React.js, Redux
-                            , yarn, Linux, and Heroku.
-                            A Material Design aesthetic with the material-ui module directs the UI.
+                            Some concerns we are aware of on this project:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            I opened up the React front-end of this project to Code Tacoma members
-                            in the event anyone was interested in collaborating so I could
-                            collaborate and boost my team project experience.  Two other members
-                            contributed as indicated in the project's git history.  As the
-                            master branch stands now, there are tools and libraries implemented
-                             which are a bit beyond my current React grok-level. I've decided to
-                            fork this project so I can get some practice
-                            implementing the portions done by other contributors.
+                            It must be maintainable,
+                            the last thing we want is to give the EDF something that will break in a
+                            year and cost them resources or force them to drop the application.
+                            We are also aware the contributors will likely be working asynchronously,
+                            so VCS and project conventions will be crucial to keeping this as
+                            time-efficient as possible.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            Future technologies getting integrated to this project:
-                        </Typography>
-                        <Typography className={classes.typographyText} paragraph>
-                            Docker (I'm still tuning my "compose" skills), Travis & Jenkins
-                            (I'm getting better at this CI/CD thing), a back-end caching
-                            module (have not decided on one quite yet).
-                        </Typography>
-                        <Typography className={classes.typographyText} paragraph>
-                            The long-term plan for this project includes implementing a server-less
-                            architecture, probably with AWS Lambda as well as programmatic aggregation
-                            of data through some API calls to resources like TechCrunch,
-                            MapServer and others.
-                        </Typography>
-                        <Typography className={classes.typographyText}>
-                            <a href="http://www.codetacoma.org">Link to REST API</a>
-                        </Typography>
-                        <Typography className={classes.typographyText}>
-                            <a href="http://www.codetacoma.xyz/">Link to front-end</a>
+                            Planning docs will be linked as they are agreed on.
                         </Typography>
                     </CardContent>
                 </Collapse>
@@ -176,8 +156,8 @@ class TacomaAPICard extends React.Component {
     }
 }
 
-TacomaAPICard.propTypes = {
+EDFCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TacomaAPICard);
+export default withStyles(styles)(EDFCard);

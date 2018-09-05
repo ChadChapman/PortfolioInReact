@@ -11,7 +11,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import green from '@material-ui/core/colors/green';
+import orange from '@material-ui/core/colors/orange';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -43,7 +43,7 @@ const styles = theme => ({
         transform: 'rotate(180deg)',
     },
     avatar: {
-        backgroundColor: green[500],
+        backgroundColor: orange[500],
     },
     typographyText: {
         textAlign: 'left',
@@ -51,7 +51,7 @@ const styles = theme => ({
     },
 });
 
-class TacomaAPICard extends React.Component {
+class RabbitChatCard extends React.Component {
     state = { expanded: false };
 
     handleExpandClick = () => {
@@ -65,8 +65,8 @@ class TacomaAPICard extends React.Component {
             <Card className={classes.card}>
                 <CardHeader
                     avatar={
-                        <Avatar aria-label="Tacoma Tech API" className={classes.avatar}>
-                            T
+                        <Avatar aria-label="Android Chat App" className={classes.avatar}>
+                            A
                         </Avatar>
                     }
                     // action={
@@ -74,8 +74,8 @@ class TacomaAPICard extends React.Component {
                     //         <MoreVertIcon />
                     //     </IconButton>
                     // }
-                    title="Tacoma Tech Info API"
-                    subheader="Tacoma tech ecosystem listings"
+                    title="Android Chat App"
+                    subheader="Android chat client with Express REST API and PGSQL database"
                 />
                 {/*<CardMedia*/}
                 {/*className={classes.media}*/}
@@ -91,9 +91,11 @@ class TacomaAPICard extends React.Component {
                 {/*/>*/}
                 <CardContent>
                     <Typography className={classes.typographyText} component="p">
-                        This began as solely an Express REST API to aggregate
-                        information and serve endpoints for anyone interested in
-                        creating front-end side projects. A React front-end was added later.
+                        The only class project mentioned on here, this was a
+                        group project which are infamous.  Our collaboration
+                        however, went really well.  We rolled our own authentication
+                        weather, location, messaging features and performed some
+                        git triage. It was a great learning experience all around.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
@@ -120,54 +122,42 @@ class TacomaAPICard extends React.Component {
                             Background:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            There is no single source I could find which held
-                            all the info about Tacoma's tech scene.
-                            So...I made one!
+                            An ambitious term project for a 400-level senior elective, we
+                            were squeezed as much into this project as we could.  An Agile
+                            methodology was utilized with roughly 2 week sprints,
+                            regular deliverables, Scrums, a rotating PM, backlog grooming
+                            meetings, design meetings, a Kanban board and I'm sure I'm forgetting
+                            at least a few things.  We also had to draft and agree to code
+                            conventions and try to find workable meeting times.  It was a
+                            very rich learning experience.
+
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            My hope was this could also serve as a
-                            back-end service for other people's side projects as needed.
-                            The front-end is public but I still need to refactor the back
-                            to use config vars before it's made public, however I'm
-                            happy to share the API code as needed.
+                            We used a lot of research and these technologies :
+                            Node.js, PostgreSQL, Express.js, git, Android SDK (I think Maven and
+                            Gradle may be implicit), Linux, and Heroku.  Firebase was <em>not used</em>,
+                            we rolled our own and in the process learned how difficult that can be.
+                            A Material Design aesthetic for the UI was cobbled together and some of it even
+                            worked.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            A full list of all the technologies used so far:
+                           Portions I contributed to included implementing the RecyclerView, structuring
+                            the Express endpoints schema, various queries, coordinating git "mega-merges"
+                            before presenting deliverables and implementing all callbacks.  It was a
+                            really interesting learning experience.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            Node.js, PostgreSQL, Express.js, git, React.js, Redux
-                            , yarn, Linux, and Heroku.
-                            A Material Design aesthetic with the material-ui module directs the UI.
-                        </Typography>
-                        <Typography className={classes.typographyText} paragraph>
-                            I opened up the React front-end of this project to Code Tacoma members
-                            in the event anyone was interested in collaborating so I could
-                            collaborate and boost my team project experience.  Two other members
-                            contributed as indicated in the project's git history.  As the
-                            master branch stands now, there are tools and libraries implemented
-                             which are a bit beyond my current React grok-level. I've decided to
-                            fork this project so I can get some practice
-                            implementing the portions done by other contributors.
-                        </Typography>
-                        <Typography className={classes.typographyText} paragraph>
-                            Future technologies getting integrated to this project:
-                        </Typography>
-                        <Typography className={classes.typographyText} paragraph>
-                            Docker (I'm still tuning my "compose" skills), Travis & Jenkins
-                            (I'm getting better at this CI/CD thing), a back-end caching
-                            module (have not decided on one quite yet).
-                        </Typography>
-                        <Typography className={classes.typographyText} paragraph>
-                            The long-term plan for this project includes implementing a server-less
-                            architecture, probably with AWS Lambda as well as programmatic aggregation
-                            of data through some API calls to resources like TechCrunch,
-                            MapServer and others.
+                            Future plans for this project:
+                            After forking, I will probably switch over to Firebase for authentication as I'm
+                            now aware just how difficult auth is.  Once FishnGigs is live on desktop, Android
+                            will be the next platform and this project may serve as a very rough template.  Or I
+                            could look at the code I wrote 6 months ago and decide to scrap it and begin anew.
                         </Typography>
                         <Typography className={classes.typographyText}>
-                            <a href="http://www.codetacoma.org">Link to REST API</a>
+                            <a href="https://github.com/CSS450Group2/ProjectNodeService">Link to REST API</a>
                         </Typography>
                         <Typography className={classes.typographyText}>
-                            <a href="http://www.codetacoma.xyz/">Link to front-end</a>
+                            <a href="https://github.com/CSS450Group2/ProjectMain">Link to front-end</a>
                         </Typography>
                     </CardContent>
                 </Collapse>
@@ -176,8 +166,8 @@ class TacomaAPICard extends React.Component {
     }
 }
 
-TacomaAPICard.propTypes = {
+RabbitChatCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TacomaAPICard);
+export default withStyles(styles)(RabbitChatCard);
