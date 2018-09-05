@@ -38,6 +38,7 @@ function BackgroundInfoCard(props) {
                 {/*</Typography>*/}
                 {/*<Typography variant="headline" component="h2">*/}
                 <Typography className={classes.title} color="textSecondary">
+                    <h3>Everyone's got a story, here's mine:</h3>
                     <p>The first time I went to college, I started out pursuing a Physics degree then
                     switched to a Business Administration track.  I just flat did not know what I
                     wanted to do yet.</p>
