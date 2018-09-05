@@ -11,7 +11,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import green from '@material-ui/core/colors/green';
+import teal from '@material-ui/core/colors/teal';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -43,7 +43,7 @@ const styles = theme => ({
         transform: 'rotate(180deg)',
     },
     avatar: {
-        backgroundColor: green[500],
+        backgroundColor: teal[500],
     },
     typographyText: {
         textAlign: 'left',
@@ -65,7 +65,7 @@ class EDFCard extends React.Component {
             <Card className={classes.card}>
                 <CardHeader
                     avatar={
-                        <Avatar aria-label="Tacoma Tech API" className={classes.avatar}>
+                        <Avatar aria-label="EDF Web App" className={classes.avatar}>
                             T
                         </Avatar>
                     }
@@ -74,8 +74,9 @@ class EDFCard extends React.Component {
                     //         <MoreVertIcon />
                     //     </IconButton>
                     // }
-                    title="Tacoma Tech Info API"
-                    subheader="Tacoma tech ecosystem listings"
+                    title="EDF GIS Data Web App"
+                    subheader="Environmental Defense Fund targeted health and demographics
+                    info portal"
                 />
                 {/*<CardMedia*/}
                 {/*className={classes.media}*/}

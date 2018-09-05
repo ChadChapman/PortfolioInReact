@@ -11,7 +11,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import green from '@material-ui/core/colors/green';
+import orange from '@material-ui/core/colors/orange';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -43,7 +43,7 @@ const styles = theme => ({
         transform: 'rotate(180deg)',
     },
     avatar: {
-        backgroundColor: green[500],
+        backgroundColor: orange[500],
     },
     typographyText: {
         textAlign: 'left',
@@ -65,8 +65,8 @@ class RabbitChatCard extends React.Component {
             <Card className={classes.card}>
                 <CardHeader
                     avatar={
-                        <Avatar aria-label="Tacoma Tech API" className={classes.avatar}>
-                            T
+                        <Avatar aria-label="Android Chat App" className={classes.avatar}>
+                            A
                         </Avatar>
                     }
                     // action={
@@ -74,8 +74,8 @@ class RabbitChatCard extends React.Component {
                     //         <MoreVertIcon />
                     //     </IconButton>
                     // }
-                    title="Tacoma Tech Info API"
-                    subheader="Tacoma tech ecosystem listings"
+                    title="Android Chat App"
+                    subheader="Android chat client with Express REST API and PGSQL database"
                 />
                 {/*<CardMedia*/}
                 {/*className={classes.media}*/}
@@ -91,9 +91,11 @@ class RabbitChatCard extends React.Component {
                 {/*/>*/}
                 <CardContent>
                     <Typography className={classes.typographyText} component="p">
-                        This began as solely an Express REST API to aggregate
-                        information and serve endpoints for anyone interested in
-                        creating front-end side projects. A React front-end was added later.
+                        The only class project mentioned on here, this was a
+                        group project which can be infamously bad.  Our collaboration
+                        however, went really well.  We rolled our own authentication
+                        weather, location and messaging features. It was a great
+                        learning experience all around.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
