@@ -89,7 +89,10 @@ function AutoGrid(props) {
                     </Paper>
                 </Grid>
                 <Grid item xs={6} sm={4}>
-                    <Paper className={classes.paper}>Professional History</Paper>
+                    {/*<Paper className={classes.paper}>Professional History</Paper>*/}
+                    <Paper className={classes.paper}>
+                        <HistoryDialog />
+                    </Paper>
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     {/*<Paper className={classes.paper}>Education</Paper>*/}

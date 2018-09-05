@@ -4,7 +4,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import Slide from '@material-ui/core/Slide';
-import EduInfoCard from './infocards/EduInfoCard'
+import HistoryInfoCard from './infocards/HistoryInfoCard'
 
 function Transition(props) {
     return <Slide direction="up" {...props} />;
@@ -16,7 +16,7 @@ const styles = theme => ({
     },
 });
 
-class EducationDialog extends React.Component {
+class HistoryDialog extends React.Component {
     state = {
         open: false,
     };
@@ -34,7 +34,7 @@ class EducationDialog extends React.Component {
             <div>
                 <Button onClick={this.handleClickOpen}
                         fullWidth="true">
-                    Education
+                    Professional History
                 </Button>
                 <Dialog
                     open={this.state.open}
@@ -51,11 +51,11 @@ class EducationDialog extends React.Component {
                         {/*<DialogContentText id="alert-dialog-slide-description">*/}
                         {/*<BlogInfoCard />                            */}
                         {/*</DialogContentText>*/}
-                        <EduInfoCard />
+                        <HistoryInfoCard />
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClose} color="inherit">
-                            GO HUSKIES!
+                            neat-o!
                         </Button>
                     </DialogActions>
                 </Dialog>
@@ -64,4 +64,4 @@ class EducationDialog extends React.Component {
     }
 }
 
-export default EducationDialog;
+export default HistoryDialog;
