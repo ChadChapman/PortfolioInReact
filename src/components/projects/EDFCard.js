@@ -66,7 +66,7 @@ class EDFCard extends React.Component {
                 <CardHeader
                     avatar={
                         <Avatar aria-label="EDF Web App" className={classes.avatar}>
-                            T
+                            E
                         </Avatar>
                     }
                     // action={
@@ -92,9 +92,12 @@ class EDFCard extends React.Component {
                 {/*/>*/}
                 <CardContent>
                     <Typography className={classes.typographyText} component="p">
-                        This began as solely an Express REST API to aggregate
-                        information and serve endpoints for anyone interested in
-                        creating front-end side projects. A React front-end was added later.
+                        Through the connections of a Code Tacoma member, we have partnered
+                        with the EDF to create a data-intensive web application.  GIS data
+                        will be the foundation with the aim of drawing insights and
+                        educating the public in regards to the externalities of specific
+                        industry practices.  This is a really exciting opportunity for
+                        cross-pollination between GIS, software, data science and UX disciplines.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
@@ -121,44 +124,30 @@ class EDFCard extends React.Component {
                             Background:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            There is no single source of info I could find which held
-                            all the info I was interested in about Tacoma's tech scene.
-                            So...I made one!  My hope was this could also serve as a
-                            back-end service for other people's side projects as needed.
-                            The front-end is public but I still need to refactor the back
-                            to use config vars before it's made public, however I'm
-                            happy to share the API code as needed.
+                            This is a green field project with a client who is open and grateful to be
+                            working with us.  It should be quite a ride with a steep learning curve.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
                             Here's a full list of all the technologies used so far:
-                            Node.js, PostgreSQL, Express.js, git, React.js, Redux
-                            , yarn, Linux, and Heroku.
-                            A Material Design aesthetic with the material-ui module directs the UI.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            I opened up the React front-end of this project to Code Tacoma members
-                            in the event anyone was interested in collaborating so I could
-                            learn and boost my team project experience.  Two other members
-                            contributed as indicated in the project's git history.  As the
-                            master branch stands now, there are tools and libraries implemented
-                            which are a bit beyond my current React grok-level.
+                            .....just kidding, we are still in the planning and architecture
+                            stages.  Technologies for now include pens, dry-erase markers,
+                            napkins and notebooks.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            Future technologies getting integrated to this project:
-                            I've decided to fork this project so I can get some practice
-                            implementing the portions done by other contributors.
-                            Docker (I'm still tuning my "compose" skills), Travis & Jenkins
-                            (I'm getting better at this CI/CD thing), a back-end caching
-                            module (have not decided on one quite yet).
-                            The long-term plan for this project includes implementing a server-less
-                            architecture, probably with AWS Lambda as well as aggregation of data
-                            through some API calls to resources like TechCrunch, MapServer and others..
+                            Some concerns we are aware of on this project:
                         </Typography>
-                        <Typography className={classes.typographyText}>
-                            <a href="http://www.codetacoma.org">Link to REST API</a>
+                        <Typography className={classes.typographyText} paragraph>
+                            It must be maintainable,
+                            the last thing we want is to give the EDF something that will break in a
+                            year and cost them resources or force them to drop the application.
+                            We are also aware the contributors will likely be working asynchronously,
+                            so VCS and project conventions will be crucial to keeping this as
+                            time-efficient as possible.
                         </Typography>
-                        <Typography className={classes.typographyText}>
-                            <a href="http://www.codetacoma.xyz/">Link to front-end</a>
+                        <Typography className={classes.typographyText} paragraph>
+                            Planning docs will be linked as they are agreed on.
                         </Typography>
                     </CardContent>
                 </Collapse>
