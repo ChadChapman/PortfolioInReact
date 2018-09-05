@@ -36,23 +36,15 @@ function BlogInfoCard(props) {
                     Whoops, I haven't migrated my blog over to this site yet!
                 </Typography>
                 <Typography variant="headline" component="h2">
-                    in case you are interested in it:
+                    in case you are really interested in it for some reason:
                     {bull}
-                    nev
-                    {bull}o{bull}
-                    lent
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    adjective
-                </Typography>
-                <Typography component="p">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
+                    warning: the older stuff is  a bit cringy
+                    {bull}
+                    OK, you were warned...
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button href="http://www.codecrab.me/" size="small">old blog</Button>
             </CardActions>
         </Card>
     );
