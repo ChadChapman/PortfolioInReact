@@ -6,34 +6,20 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-import BlogInfoCard from './infocards/BlogInfoCard'
+import INAInfoCard from './infocards/INAInfoCard'
 import Typography from '@material-ui/core/Typography'
 
 function Transition(props) {
     return <Slide direction="up" {...props} />;
 }
 
-// function Transition(props) {
-//     return <BlogInfoCard />
-// }
-
 const styles = theme => ({
     root: {
         flexGrow: 1,
     },
-    paperStyle: {
-        //padding: theme.spacing.unit * 2,
-        //textAlign: 'center',
-        // color: theme.palette.text.secondary,
-        //color: theme.palette.text.title,
-        //font
-        // marginBottom: theme.spacing.unit * 2,
-        case: "sentence",
-
-    },
 });
 
-class BlogDialog extends React.Component {
+class INADialog extends React.Component {
     state = {
         open: false,
     };
@@ -51,7 +37,7 @@ class BlogDialog extends React.Component {
             <div>
                 <Button onClick={this.handleClickOpen}
                         fullWidth="true">
-                    Blog
+                    Interests & Achievements
                 </Button>
                 <Dialog
                     open={this.state.open}
@@ -61,22 +47,22 @@ class BlogDialog extends React.Component {
                     aria-labelledby="alert-dialog-slide-title"
                     aria-describedby="alert-dialog-slide-description"
                 >
-                    <DialogTitle id="alert-dialog-slide-title">
-                        {"Where's your blog, Chad?"}
-                    </DialogTitle>
+                    {/*<DialogTitle id="alert-dialog-slide-title">*/}
+                        {/*{"Where's your blog, Chad?"}*/}
+                    {/*</DialogTitle>*/}
                     <DialogContent>
                         {/*<DialogContentText id="alert-dialog-slide-description">*/}
                         {/*<BlogInfoCard />                            */}
                         {/*</DialogContentText>*/}
-                        <BlogInfoCard />
+                        <INAInfoCard />
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClose} color="primary">
-                            nah, I'm good
+                            got it
                         </Button>
-                        <Button href="http://www.codecrab.me/" color="primary">
-                            to the old blog!
-                        </Button>
+                        {/*<Button href="http://www.codecrab.me/" color="primary">*/}
+                            {/*to the old blog!*/}
+                        {/*</Button>*/}
                     </DialogActions>
                 </Dialog>
             </div>
@@ -84,4 +70,4 @@ class BlogDialog extends React.Component {
     }
 }
 
-export default BlogDialog;
+export default INADialog;

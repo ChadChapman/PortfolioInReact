@@ -12,6 +12,7 @@ import EducationDialog from './dialogs/EducationDialog'
 import BackgroundDialog from './dialogs/BackgroundDialog'
 import HistoryDialog from './dialogs/HistoryDialog'
 import CTDialog from './dialogs/CodeTacomaDialog'
+import INADialog from './dialogs/INADialog'
 
 const styles = theme => ({
     root: {
@@ -113,7 +114,10 @@ function AutoGrid(props) {
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <Paper className={classes.paper}>Interests & Achievements</Paper>
+                    {/*<Paper className={classes.paper}>Interests & Achievements</Paper>*/}
+                    <Paper className={classes.paper}>
+                        <INADialog />
+                    </Paper>
                 </Grid>
             </Grid>
             <FooterBar />
