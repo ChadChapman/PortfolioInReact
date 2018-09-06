@@ -76,7 +76,7 @@ class MenuAppBar extends React.Component {
                         </IconButton>
                         </Tooltip>
                         <Typography variant="title" color="inherit" className={classes.flex}>
-                            Chad T. Chapman's Personal Page
+                            Chad T. Chapman
                         </Typography>
                         <Tooltip title="my Github">
                             <IconButton className={classes.rightIconButton}
