@@ -120,15 +120,18 @@ class TacomaAPICard extends React.Component {
                             Background:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            There is no single source I could find which held
+                            There was no single source I could find which held
                             all the info about Tacoma's tech scene.
                             So...I made one!
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            My hope was this could also serve as a
-                            back-end service for other people's side projects as needed.
-                            The front-end is public but I still need to refactor the back
-                            to use config vars before it's made public, however I'm
+                            My hope was this project could also serve as a
+                            back-end service for other people's front-end projects as needed.
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
+                            The front-end I created in vanilla React is public,
+                            I still need to refactor the Express REST API to use config
+                            vars before that repo is made public, however I'm
                             happy to share the API code as needed.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
@@ -142,26 +145,27 @@ class TacomaAPICard extends React.Component {
                         <Typography className={classes.typographyText} paragraph>
                             I opened up the React front-end of this project to Code Tacoma members
                             in the event anyone was interested in collaborating so I could
-                            collaborate and boost my team project experience.  Two other members
+                            learn and boost my team project experience.  Two other members
                             contributed as indicated in the project's git history.  As the
                             master branch stands now, there are tools and libraries implemented
                              which are a bit beyond my current React grok-level. I've decided to
                             fork this project so I can get some practice
-                            implementing the portions done by other contributors.
+                            implementing the portions added by other contributors.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            Future technologies getting integrated to this project:
+                            Technologies getting integrated in the future:
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
                             Docker (I'm still tuning my "compose" skills), Travis & Jenkins
                             (I'm getting better at this CI/CD thing), a back-end caching
-                            module (have not decided on one quite yet).
+                            module (have not decided which one quite yet), Redis, I'm sure
+                            there are awesome npm modules I'm not even aware of yet too.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
                             The long-term plan for this project includes implementing a server-less
-                            architecture, probably with AWS Lambda as well as programmatic aggregation
+                            architecture, probably with AWS Lambda.  Programmatic aggregation
                             of data through some API calls to resources like TechCrunch,
-                            MapServer and others.
+                            MapServer and others is in the works as well.
                         </Typography>
                         <Typography className={classes.typographyText}>
                             <a href="http://www.codetacoma.org">Link to REST API</a>

@@ -122,21 +122,25 @@ class FishnGigsCard extends React.Component {
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
                             Niche industries like commercial fishing don't have
-                            much in the way of online platforms, this project aims to
+                            much in the way of online platforms, this project aims
                             to help change that.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
                             Here's a full list of all the technologies used so far:
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
                             Django Rest Framework (making Django, SQLite3 and Python rather implicit)
                             PostgreSQL, git, Linux, Digital Ocean and now Heroku as a platform.
                             A Material Design aesthetic with the material-ui module directs the UI.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            Future technologies getting integrated to this project:
+                            Technologies getting integrated in the future:
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
                             Redux (I've found it really insightful to start with using vanilla React
                             for a project then add Redux), react-router, Travis & Jenkins (I'm getting
                             better at this CI/CD thing), a back-end caching library (have not decided
-                            on one quite yet) and Redis.
+                            which one quite yet) and Redis.
                             The long-term plan for this project includes implementing a server-less
                             architecture, probably with AWS Lambda.
                         </Typography>
@@ -145,7 +149,7 @@ class FishnGigsCard extends React.Component {
                         </Typography>
                         <Typography className={classes.typographyText}>
                             <a href="https://fngigs-front.herokuapp.com/">Link to front-end (as of
-                                9-3 has not been deployed live yet)</a>
+                                9-6 has not been deployed live yet)</a>
                         </Typography>
                     </CardContent>
                 </Collapse>
