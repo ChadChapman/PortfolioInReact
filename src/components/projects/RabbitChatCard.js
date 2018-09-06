@@ -91,11 +91,12 @@ class RabbitChatCard extends React.Component {
                 {/*/>*/}
                 <CardContent>
                     <Typography className={classes.typographyText} component="p">
-                        The only class project mentioned on here, this was a
-                        group project which are infamous.  Our collaboration
-                        however, went really well.  We rolled our own authentication
-                        weather, location, messaging features and performed some
-                        git triage. It was a great learning experience all around.
+                        The only class project mentioned on here, this was an
+                        infamous group project.  Our 5-person team collaboration
+                        however, went really well.  We rolled our own authentication,
+                        weather, location and messaging features. Git triage was performed
+                        at least a few times but we perservered.
+                        It ended up a truly great learning experience all around.
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} disableActionSpacing>
@@ -123,9 +124,9 @@ class RabbitChatCard extends React.Component {
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
                             An ambitious term project for a 400-level senior elective, we
-                            were squeezed as much into this project as we could.  An Agile
+                            squeezed as much into this project as we could.  An Agile
                             methodology was utilized with roughly 2 week sprints,
-                            regular deliverables, Scrums, a rotating PM, backlog grooming
+                            regular deliverables, daily Scrums, a rotating PM, backlog grooming
                             meetings, design meetings, a Kanban board and I'm sure I'm forgetting
                             at least a few things.  We also had to draft and agree to code
                             conventions and try to find workable meeting times.  It was a
@@ -133,15 +134,17 @@ class RabbitChatCard extends React.Component {
 
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                            We used a lot of research and these technologies :
+                            We used <em>a lot</em> of research and these technologies :
+                        </Typography>
+                        <Typography className={classes.typographyText} paragraph>
                             Node.js, PostgreSQL, Express.js, git, Android SDK (I think Maven and
-                            Gradle may be implicit), Linux, and Heroku.  Firebase was <em>not used</em>,
+                            Gradle may be implicit here), Linux, and Heroku.  Firebase <em>was not used</em>,
                             we rolled our own and in the process learned how difficult that can be.
                             A Material Design aesthetic for the UI was cobbled together and some of it even
                             worked.
                         </Typography>
                         <Typography className={classes.typographyText} paragraph>
-                           Portions I contributed to included implementing the RecyclerView, structuring
+                           Portions I contributed to included: implementing the RecyclerView, structuring
                             the Express endpoints schema, various queries, coordinating git "mega-merges"
                             before presenting deliverables and implementing all callbacks.  It was a
                             really interesting learning experience.
@@ -149,9 +152,12 @@ class RabbitChatCard extends React.Component {
                         <Typography className={classes.typographyText} paragraph>
                             Future plans for this project:
                             After forking, I will probably switch over to Firebase for authentication as I'm
-                            now aware just how difficult auth is.  Once FishnGigs is live on desktop, Android
-                            will be the next platform and this project may serve as a very rough template.  Or I
-                            could look at the code I wrote 6 months ago and decide to scrap it and begin anew.
+                            now aware just how challenging it is to do auth well and account for all edge cases.
+                            Once FishnGigs (mentioned above) is live on desktop, Android will be the next
+                            platform I port it to and this project may well serve as a very rough template.
+                            Or I may just look at the code I wrote 6 months ago and decide to scrap it
+                            and begin anew.  Either way, I came away from this project with a much better
+                            comprehension of the challenges faced by mobile developers.
                         </Typography>
                         <Typography className={classes.typographyText}>
                             <a href="https://github.com/CSS450Group2/ProjectNodeService">Link to REST API</a>
