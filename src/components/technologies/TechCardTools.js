@@ -23,6 +23,9 @@ const styles = {
     pos: {
         marginBottom: 12,
     },
+    listAll: {
+        textAlign: 'left'
+    }
 };
 
 function ToolsCard(props) {
@@ -37,8 +40,8 @@ function ToolsCard(props) {
                 <Typography className={classes.pos} color="textSecondary">
                     development tools I use
                 </Typography>
-                <Typography component="p">
-                    git, Linux, Travis, Docker, Heroku, gunicorn, AWS, Azure Machine Learning Studio, SVN, jUnit, pytest
+                <Typography className={classes.listAll} component="p">
+                    git, Linux, Travis, Docker, Heroku, gunicorn, AWS (Lambda, s3, Logs, API Gateway, IAM, Cognito) Azure Machine Learning Studio, SVN, jUnit, pytest
                 </Typography>
             </CardContent>
         </Card>
