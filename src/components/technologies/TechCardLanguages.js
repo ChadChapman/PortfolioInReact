@@ -23,6 +23,9 @@ const styles = {
     pos: {
         marginBottom: 12,
     },
+    listAll: {
+        textAlign: 'left'
+    }
 };
 
 function LanguagesCard(props) {
@@ -37,7 +40,7 @@ function LanguagesCard(props) {
                 <Typography className={classes.pos} color="textSecondary">
                     in descending order of experience
                 </Typography>
-                <Typography component="p">
+                <Typography className={classes.listAll} component="p">
                     Python, Java, JavaScript, Bash, HTML & CSS, C, Ruby
                 </Typography>
             </CardContent>

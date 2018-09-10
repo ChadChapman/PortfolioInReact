@@ -23,6 +23,9 @@ const styles = {
     pos: {
         marginBottom: 12,
     },
+    listAll: {
+        textAlign: 'left'
+    }
 };
 
 function FrameworksCard(props) {
@@ -37,7 +40,7 @@ function FrameworksCard(props) {
                 <Typography className={classes.pos} color="textSecondary">
                     notable libraries also included
                 </Typography>
-                <Typography component="p">
+                <Typography className={classes.listAll} component="p">
                     Node.js, Django, React.js (made this), Django REST Framework
                     , Android, Express.js, Flask, Java FX, Java Swing, Ruby on Rails
                 </Typography>

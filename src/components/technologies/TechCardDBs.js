@@ -23,6 +23,9 @@ const styles = {
     pos: {
         marginBottom: 12,
     },
+    listAll: {
+        textAlign: 'left'
+    }
 };
 
 function DBsCard(props) {
@@ -37,8 +40,8 @@ function DBsCard(props) {
                 <Typography className={classes.pos} color="textSecondary">
                     in descending order of experience
                 </Typography>
-                <Typography component="p">
-                    PostgreSQL, Maria/MySQL, TSQL, Mongo
+                <Typography className={classes.listAll} component="p">
+                    PostgreSQL, Maria/MySQL, Dynamo, Amazon RDS, TSQL, Mongo
                 </Typography>
             </CardContent>
         </Card>

@@ -10,12 +10,18 @@ import Menu from '@material-ui/core/Menu';
 import Tooltip from '@material-ui/core/Tooltip'
 //import amberColor from '@material-ui/colors/amber'
 import blueGrey from '@material-ui/core/colors/blueGrey';
+// import darkBaseTheme from '@material-ui/styles/baseThemes/darkBaseTheme';
+// import MuiThemeProvider from '@material-ui/styles/M
+// import getMuiTheme from '@material-ui/styles/getMuiTheme';
+
+
 
 const styles = theme => ({
     root: {
         positionSticky: true,
         flexGrow: 1,
-        // color: "blueGrey",
+        background: 'blueGrey',
+        color: 'blueGrey',
     },
     flex: {
         flexGrow: 1,
@@ -26,7 +32,7 @@ const styles = theme => ({
         //marginRight: 20,
         marginRight: theme.spacing.unit * 2,
         // marginTop: theme.spacing.unit * -1.5,
-        color: "cyan",
+        color: "grey",
     },
     rightIconButton: {
         // marginLeft: 12,
@@ -34,12 +40,14 @@ const styles = theme => ({
         // marginRight: -20,
         marginRight: theme.spacing.unit * -2,
         // marginTop: theme.spacing.unit * -1.5,
-        color: "cyan",
+        color: "grey",
     },
     appBarAttrs: {
       color: "blueGrey",
     },
 });
+
+
 
 class MenuAppBar extends React.Component {
     state = {
@@ -66,7 +74,8 @@ class MenuAppBar extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar >
+                {/*<MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>*/}
+                <AppBar color={'blueGrey'} >
                     <Toolbar>
                         <Tooltip title="let's connect!">
                         <IconButton className={classes.leftIconButton}
@@ -119,6 +128,7 @@ class MenuAppBar extends React.Component {
                         )}
                     </Toolbar>
                 </AppBar>
+                {/*</MuiThemeProvider>*/}
             </div>
         );
     }
