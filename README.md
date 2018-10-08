@@ -13,7 +13,7 @@ It is kept "awake" by using a `wget` call set up for every 15 mins.  The call is
 
 [Check this Ask Ubuntu thread for more info.](https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job)
 
-This is not really an ideal implementation and something like a New Relic traffic tool would be a better option, so I've added that to issues #here
+This is not really an ideal implementation and something like a New Relic traffic tool would be a better option, so I've added that to this repo's issues.
 
 #### Data
 Since this information is all rather static, there is no backing data store.  If I come up with a clever or lazy way to update the content here, I'll add an issue to the backlog.
