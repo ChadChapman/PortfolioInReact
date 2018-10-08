@@ -1,6 +1,8 @@
 ## I wanted to get in some more reps with React and Material-UI components.
 #### So, I made a portfolio site for some of my current projects.
-If you are considering something similar, may I suggest [Gatsby?](https://www.gatsbyjs.org)  I wish I had known about Gatsby before I made this site, however it was still a great learning and tinkering experience.
+If you are considering something similar, may I suggest [Gatsby?](https://www.gatsbyjs.org)  
+
+I wish I had known about Gatsby beforehand, however making this ~~site~~ page from scratch was still a great learning and tinkering experience.
 
 #### It is also an exercise in use of white space, break-points and `Grid`.
 
@@ -11,7 +13,7 @@ It is kept "awake" by using a `wget` call set up for every 15 mins.  The call is
 
 [Check this Ask Ubuntu thread for more info.](https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job)
 
-This is not really an ideal implementation and something like a New Relic traffic tool would be a better option, so I've added that to 
+This is not really an ideal implementation and something like a New Relic traffic tool would be a better option, so I've added that to issues #here
 
 #### Data
 Since this information is all rather static, there is no backing data store.  If I come up with a clever or lazy way to update the content here, I'll add an issue to the backlog.
