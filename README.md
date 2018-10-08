@@ -1,6 +1,6 @@
 ## I wanted to get in some more reps with React and Material-UI components.
 #### So, I made a portfolio site for some of my current projects.
-If you are considering something similar, may I suggest [Gatsby]?(https://www.gatsbyjs.org/)  I wish I had known about Gatsby before I made this site, however it was still a great learning and tinkering experience.
+If you are considering something similar, may I suggest [Gatsby?](https://www.gatsbyjs.org)  I wish I had known about Gatsby before I made this site, however it was still a great learning and tinkering experience.
 
 #### It is also an exercise in use of white space, break-points and `Grid`.
 
