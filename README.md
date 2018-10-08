@@ -1,8 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+## I wanted to get in some more reps with React and Material-UI components.
+#### So, I made a portfolio site for some of my current projects.
+If you are considering something similar, may I suggest [Gatsby]?(https://www.gatsbyjs.org/)  I wish I had known about Gatsby before I made this site, however it was still a great learning and tinkering experience.
 
-Please check out that page for more info, the default README is a beast, a very helpful beast that takes a while to step through.
-
-### This project came out of an interest in getting some reps with React and Material-UI components.  
 #### It is also an exercise in use of white space, break-points and `Grid`.
 
 My understanding is `Grid` does not play well with IE and its adpotion rate suffers as a result.  YMMV, etc.
@@ -26,3 +25,6 @@ If any projects get put on ice for an extended period, I'll likely remove them o
 
 
 
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+Please check out that page for more info, the default README is a beast, a very helpful beast that takes a while to step through.
